@@ -2,4 +2,10 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: $margin-large;
+  background: linear-gradient(#626262,#222222);
+
+  .logo {
+    width: 80px;
+  }
 }

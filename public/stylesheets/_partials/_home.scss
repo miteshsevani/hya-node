@@ -1,3 +1,29 @@
 .home {
-  
+  .classes {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+    .class {
+      border: 1px solid $color-secondary;
+      border-radius: 5px;
+      width: 100%;      
+      margin: $margin-large 0;
+      padding: $margin-default;
+      > div {
+        padding: $margin-small;
+      }
+    }
+  }  
+}
+
+@include breakpoint(tablet) {
+  .home {
+    .classes {
+      .class {
+        width: 250px;
+      }
+    }
+  } 
 }

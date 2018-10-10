@@ -1,7 +1,6 @@
-body {
-  max-width: 1000px;
+body {    
   font: 300 $font-size-default $font-family-default;
-  line-height: 1.2;
+  color: $color-text;  
   padding: $margin-default;
   margin: 0 auto;    
   -webkit-font-smoothing: antialiased;
@@ -19,11 +18,24 @@ a {
 h1, h2, h3, h4, h5, h6 {
   font-weight: 500;
   color:$color-secondary;
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
 }
 
 .intro {
   p:first-of-type {
     font-size: $font-size-intro;
     font-weight: normal;
+  }
+}
+
+
+@include breakpoint(desktop) {
+  .wrapper {
+    max-width: 900px;
+    margin: 0 auto;
   }
 }

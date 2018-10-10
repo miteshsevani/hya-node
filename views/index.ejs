@@ -1,8 +1,21 @@
 <%- include('includes/header.ejs'); %>
 
-<h1><%= data.title %></h1>
 <section class="intro">
   <%- data.intro %>
+</section>
+
+<h2>Our Classes</h2> 
+<section class="classes">   
+  <% data.classes.forEach(function(item) { %>
+  <div class="class">
+    <h3 class="class-name"><%= item.className %></h3>
+    <div class="day-time">
+      <span class="day"><%= item.day %>, </span>
+      <span class="time"><%= item.time %></span>
+    </div>
+    <div class="venue"><%- item.venue %></div>
+  </div>
+  <% }); %>  
 </section>
 
 <%- include('includes/footer.ejs'); %>
