@@ -1,23 +1,25 @@
 <%- include('includes/header.ejs'); %>
 
-<section class="intro">
-  <%- data.intro %>
-</section>
+<section class="content">
+  <section class="main">
+    <%- data.intro %>
+  </section>
 
-<h2 class="title">Our Classes</h2>
+  <h2 class="title">Our Classes</h2>
 
-<section class="classes">   
-  <% data.classes.forEach(function(item) { %>
-  <div class="class">
-    <h3 class="class-name"><%= item.className %></h3>    
-    <div class="day-time">
-      <span class="day"><%= item.day %>, </span>
-      <span class="time"><%= item.time %></span>
+  <section class="classes">   
+    <% data.classes.forEach(function(item) { %>
+    <div class="class">
+      <h3 class="class-name"><%= item.className %></h3>    
+      <div class="day-time">
+        <span class="day"><%= item.day %>, </span>
+        <span class="time"><%= item.time %></span>
+      </div>
+      <div class="venue"><%- item.venue %></div>
+      <div class="year"><%= item.year %> </div>
     </div>
-    <div class="venue"><%- item.venue %></div>
-    <div class="year"><%= item.year %> </div>
-  </div>
-  <% }); %>  
+    <% }); %>  
+  </section>
 </section>
 
 <%- include('includes/footer.ejs'); %>

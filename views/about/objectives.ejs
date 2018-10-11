@@ -1,6 +1,8 @@
-<%- include('../includes/header.ejs'); %>
-
-<h1><%= data.title %></h1>
-<p>Welcome to <%= data.title %></p>
-
-<%- include('../includes/footer.ejs'); %>
+<section class="objectives">
+  <h3><%= data.title %></h3>  
+  <ol>
+    <% data.objectives.forEach(function(item) { %>
+      <li><%= item.objective %></li>
+    <% }); %>  
+  </ol>
+</section>

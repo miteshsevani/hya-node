@@ -22,9 +22,13 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;  
 }
 
+.content {
+  padding: $margin-lg 0;
+}
+
 .title {
   text-align: center;
-  margin: $margin-large;
+  margin: $margin-lg;
   color: $color-secondary;
 }
 
@@ -32,9 +36,9 @@ img {
   max-width: 100%;
 }
 
-.intro {
+
+.main {
   p:first-of-type {
-    font-size: $font-size-intro;
     font-weight: normal;
   }
 }
