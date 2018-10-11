@@ -5,23 +5,19 @@
     "intro" : "<p>HYA has always remained focused on our children and young people.</p><p>The fundamental principles of HYA have always been to support our future of tomorrow, to build their personality in physical, intellectual, moral and spiritual strength which are all central to ensure they become good citizens.</p><p>The main activities and programmes of HYA is Providing education through lectures, discussions, hands-on training, excursions, etc leading to nationally recognised qualifications where applicable through the associations' supplementary school run in the London Borough of Greenwich. To conduct various programmes to preserve, protect and advance the health and welbeing of the young people and adults, e.g physical and mental exercises, yoga, etc.</p>",
     "classes": [      
       {
-        "className" : "English - Years 1 to 7",
+        "className" : "English",
+        "year" : "Years 1 to 7",
         "day" : "Saturday",
         "time" : "12.30 to 13.30",
         "venue" : "Plumstead Manor School<br />Old Mill Road<br />Plumstead<br />SE18 1QF"
       },
       {
-        "className" : "Maths - Years 1 to 7",
-        "day" : "Saturday",
-        "time" : "13.30 to 14.30",
-        "venue" : "Plumstead Manor School<br />Old Mill Road<br />Plumstead<br />SE18 1QF"
-      },
-      {
-        "className" : "Maths - Years 8 to 13",
+        "className" : "Maths",
+        "year" : "Years 1 to 13",
         "day" : "Saturday",
         "time" : "12.30 to 14.30",
         "venue" : "Plumstead Manor School<br />Old Mill Road<br />Plumstead<br />SE18 1QF"
-      },      
+      },            
       {
         "className" : "Gujarati",
         "day" : "Saturday",
@@ -30,8 +26,8 @@
       },
       {
         "className" : "Yoga",
-        "day_name" : "Tuesda",
-        "time_name" : "18.30 to 19.30",
+        "day" : "Tuesday",
+        "time" : "18.30 to 19.30",
         "venue" : "Glyndon Community Centre<br />Raglan Road<br />Woolwich<br />SE18 7LB"
       },
       {

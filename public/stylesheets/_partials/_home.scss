@@ -6,11 +6,22 @@
     justify-content: space-between;
     text-align: center;
     .class {
-      border: 1px solid $color-secondary;
-      border-radius: 5px;
+      border: 2px solid $color-secondary;
+      border-radius: 15px;
       width: 100%;      
-      margin: $margin-large 0;
-      padding: $margin-default;
+      margin: $margin-large*2 0;
+      padding: $margin-default*2 $margin-default;
+      position: relative;
+      display: flex;      
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      h3 {
+        position: absolute;
+        top: -18px;
+        background: #ffffff;
+        padding: 0 $margin-large;
+      }
       > div {
         padding: $margin-small;
       }

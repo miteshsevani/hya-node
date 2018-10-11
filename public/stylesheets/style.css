@@ -40,7 +40,8 @@ body {
   padding: 12px;
   margin: 0 auto;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; }
+  -moz-osx-font-smoothing: grayscale;
+  line-height: 1.5; }
 
 a {
   color: #288ECE;
@@ -51,8 +52,12 @@ a {
 h1, h2, h3, h4, h5, h6 {
   font-family: "Montserrat", Helvetica, Arial, sans-serif;
   font-weight: 500;
-  color: #288ECE;
   margin: 0; }
+
+.title {
+  text-align: center;
+  margin: 16px;
+  color: #288ECE; }
 
 img {
   max-width: 100%; }
@@ -66,20 +71,31 @@ img {
     max-width: 900px;
     margin: 0 auto; } }
 
-header .logo {
-  width: 150px; }
-
-nav ul {
+header {
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  list-style-type: none;
-  padding: 0; }
-  nav ul li {
-    padding: 16px; }
-    nav ul li a {
-      color: #CE6828;
-      font-weight: 500; }
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 12px; }
+  header .logo {
+    width: 150px; }
+
+@media all and (min-width: 760px) {
+  nav {
+    width: 100%; }
+    nav ul {
+      display: flex;
+      justify-content: flex-end;
+      flex-wrap: wrap;
+      list-style-type: none;
+      padding: 0;
+      margin: 0; }
+      nav ul li {
+        padding: 0 16px; }
+        nav ul li:last-child {
+          padding-right: 0; }
+        nav ul li a {
+          color: #CE6828;
+          font-weight: 500; } }
 
 .home .classes {
   width: 100%;
@@ -88,11 +104,21 @@ nav ul {
   justify-content: space-between;
   text-align: center; }
   .home .classes .class {
-    border: 1px solid #288ECE;
-    border-radius: 5px;
+    border: 2px solid #288ECE;
+    border-radius: 15px;
     width: 100%;
-    margin: 16px 0;
-    padding: 12px; }
+    margin: 32px 0;
+    padding: 24px 12px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; }
+    .home .classes .class h3 {
+      position: absolute;
+      top: -18px;
+      background: #ffffff;
+      padding: 0 16px; }
     .home .classes .class > div {
       padding: 6px; }
 

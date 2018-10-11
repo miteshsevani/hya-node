@@ -5,6 +5,7 @@ body {
   margin: 0 auto;    
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  line-height: 1.5;
 }
 
 a {
@@ -17,9 +18,14 @@ a {
 
 h1, h2, h3, h4, h5, h6 {
   font-family: $font-family-header;
-  font-weight: 500;
-  color: $color-secondary;
+  font-weight: 500;  
   margin: 0;  
+}
+
+.title {
+  text-align: center;
+  margin: $margin-large;
+  color: $color-secondary;
 }
 
 img {
