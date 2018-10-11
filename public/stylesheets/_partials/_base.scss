@@ -16,9 +16,10 @@ a {
 }
 
 h1, h2, h3, h4, h5, h6 {
+  font-family: $font-family-header;
   font-weight: 500;
-  color:$color-secondary;
-  margin: 0;
+  color: $color-secondary;
+  margin: 0;  
 }
 
 img {

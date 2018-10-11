@@ -16,8 +16,26 @@
   font-weight: 500;
   font-style: normal; }
 
+@font-face {
+  font-family: 'Roboto';
+  src: url("../fonts/Roboto-regular.woff2") format("woff2"), url("../fonts/Roboto-regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Roboto';
+  src: url("../fonts/Roboto-300.woff2") format("woff2"), url("../fonts/Roboto-300.woff") format("woff");
+  font-weight: 300;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Roboto';
+  src: url("../fonts/Roboto-500.woff2") format("woff2"), url("../fonts/Roboto-500.woff") format("woff");
+  font-weight: 500;
+  font-style: normal; }
+
 body {
-  font: 300 18px "Montserrat", Helvetica, Arial, sans-serif;
+  font: 300 18px "Roboto", Helvetica, Arial, sans-serif;
   color: #202124;
   padding: 12px;
   margin: 0 auto;
@@ -31,6 +49,7 @@ a {
     color: #2071a3; }
 
 h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat", Helvetica, Arial, sans-serif;
   font-weight: 500;
   color: #288ECE;
   margin: 0; }
