@@ -1,20 +1,29 @@
 // Colours
-$color-text: #202124;
+$color-default: #202124;
+$color-text: $color-default;
 $color-text-secondary: #414042;
-$color-brand: #CE6828;
+$color-brand:#EF6C00;
 $color-secondary: #288ECE;
+$color-hover: darken($color-brand,10%);
+$color-border: $color-secondary;
 
 // Font family
 $font-family-default: "Roboto", Helvetica, Arial, sans-serif;
 $font-family-header: "Montserrat", Helvetica, Arial, sans-serif;
 
 // Font zize
-$font-size-small: 14px;
-$font-size-default: 18px;
-$font-size-large: 22px;
+$font-size-xs: 12px;
+$font-size-sm: 14px;
+$font-size-default: 17px;
+$font-size-lg: 22px;
 
 // Spacing
 $margin-sm: 6px;
 $margin-default: 12px;
 $margin-lg: 16px;
 $margin-xl: 32px;
+
+
+// Screen widths
+$width-desktop: 992px;
+$width-tablet: 768px;

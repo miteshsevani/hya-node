@@ -1,9 +1,8 @@
 header {
-  display: flex;
-  justify-content: space-between;
+  display: flex;  
   align-items: baseline;  
-  margin-bottom: $margin-default;
   .logo {
-    width: 150px;
-  }
+    width: 88px;
+    margin-right: $margin-default;    
+  }  
 }

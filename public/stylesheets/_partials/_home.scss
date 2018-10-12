@@ -1,15 +1,47 @@
 .home {
+  .banner {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('../images/reading.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 400px;    
+    &:after {
+      content: "";
+      background-color: rgba(0,0,0,0.4);
+      width: 100%;
+      height: 100%;
+      display: block;            
+    }
+    .banner-heading {
+      position: absolute;
+      text-align: center;
+      padding: $margin-xl;
+      color: #ffffff;
+      text-transform: uppercase;
+      h1 {        
+        background: #000;
+        display: inline;
+        padding: $margin-default;
+        line-height: 50px;
+        box-shadow: 24px 0 0 #000, -24px 0 0 #000;
+      }
+      
+    }
+  }
   .classes {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     text-align: center;
     .class {
-      border: 2px solid $color-secondary;
+      border: 2px solid $color-border;
       border-radius: 15px;
       width: 100%;      
-      margin: $margin-xl 0;
+      margin: $margin-xl;
       padding: $margin-default*2 $margin-default;
       position: relative;
       display: flex;      
@@ -33,7 +65,7 @@
   .home {
     .classes {
       .class {
-        width: 250px;
+        width: 238px;
       }
     }
   } 

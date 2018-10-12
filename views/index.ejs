@@ -1,13 +1,13 @@
 <%- include('includes/header.ejs'); %>
 
-<section class="content">
-  <section class="main">
-    <%- data.intro %>
-  </section>
-
+<section class="content">  
+  <section class="banner">
+    <div class="banner-heading">
+      <h1>Education is not the amount of information that is put into your brain and runs riot there, undigested all your life. We must have life‑building, man‑making, character‑making, assimilation of ideas.</h1>
+    </div>
+  </section>  
   <h2 class="title">Our Classes</h2>
-
-  <section class="classes">   
+  <section class="classes">       
     <% data.classes.forEach(function(item) { %>
     <div class="class">
       <h3 class="class-name"><%= item.className %></h3>    
@@ -19,7 +19,7 @@
       <div class="year"><%= item.year %> </div>
     </div>
     <% }); %>  
-  </section>
+  </section>   
 </section>
 
 <%- include('includes/footer.ejs'); %>

@@ -5,6 +5,9 @@ nav {
 @include breakpoint(tablet) {
   nav {
     width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
     ul {
       display: flex;
       justify-content: flex-end;
@@ -13,13 +16,38 @@ nav {
       padding: 0;
       margin: 0;
       li {
-        padding: 0 $margin-lg;
-        &:last-child {
-          padding-right: 0;
-        }
+        padding: 0 $margin-lg;        
         a {
           color: $color-brand;
-          font-weight: 500;
+          font-weight: normal;
+        }
+      }
+    }
+    .social {
+      a {
+        display: inline-block;
+        background-repeat: no-repeat;
+        border-radius: 50%;
+        margin-left: $margin-lg;
+        &.facebook {
+          width: 35px;
+          height: 35px;          
+          background: #4c70ba url('../images/facebook.svg');          
+          &:hover {
+            background-color: darken(#4c70ba, 10%)
+          }
+        }
+        &.email {
+          width: 35px;
+          height: 35px;
+          background: $color-brand url('../images/email.svg') no-repeat center;          
+          &:hover {
+            background-color: $color-hover;
+          }
+                  
+        }
+        &:hover {
+          transition: 0.3s;
         }
       }
     }
