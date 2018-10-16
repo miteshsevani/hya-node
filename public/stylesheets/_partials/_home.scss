@@ -57,6 +57,9 @@
       > div {
         padding: $margin-sm;
       }
+      &.maths {
+        background: url('../images/icons/maths.png') no-repeat center/50%;
+      }
     }
   }  
 }

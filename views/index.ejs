@@ -9,8 +9,8 @@
   <h2 class="title">Our Classes</h2>
   <section class="classes">       
     <% data.classes.forEach(function(item) { %>
-    <div class="class">
-      <h3 class="class-name"><%= item.className %></h3>    
+    <div class="class <%= item.className %>">
+      <h3 class="class-name"><%= item.subject %></h3>    
       <div class="day-time">
         <span class="day"><%= item.day %>, </span>
         <span class="time"><%= item.time %></span>
