@@ -339,8 +339,7 @@ body {
   padding: 12px;
   margin: 0 auto;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  line-height: 1.5; }
+  -moz-osx-font-smoothing: grayscale; }
 
 a {
   color: #288ECE;
@@ -354,7 +353,8 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0; }
 
 .content {
-  padding: 16px 0; }
+  padding: 16px 0;
+  line-height: 1.5; }
 
 .title {
   text-align: center;
@@ -374,14 +374,23 @@ img {
 
 header {
   display: flex;
-  align-items: baseline; }
+  align-items: baseline;
+  justify-content: space-between; }
   header .logo {
-    width: 88px;
+    width: 65px;
     margin-right: 12px; }
+  header .brand {
+    display: flex;
+    align-items: flex-end; }
+    header .brand .brand-title {
+      text-transform: uppercase;
+      font-weight: normal;
+      font-size: 28px; }
+      header .brand .brand-title span {
+        font-size: 12px; }
 
 @media all and (min-width: 768px) {
   nav {
-    width: 100%;
     display: flex;
     justify-content: flex-end;
     align-items: center; }
@@ -393,7 +402,7 @@ header {
       padding: 0;
       margin: 0; }
       nav ul li {
-        padding: 0 16px; }
+        padding: 0 12px; }
         nav ul li a {
           color: #EF6C00;
           font-weight: normal; }
@@ -401,7 +410,7 @@ header {
       display: inline-block;
       background-repeat: no-repeat;
       border-radius: 50%;
-      margin-left: 16px; }
+      margin-left: 12px; }
       nav .social a.facebook {
         width: 35px;
         height: 35px;
@@ -458,7 +467,7 @@ header {
     border-radius: 15px;
     width: 100%;
     height: 200px;
-    margin: 32px 32px 64px 32px;
+    margin: 32px;
     padding: 24px 12px;
     position: relative;
     display: flex;
@@ -475,7 +484,8 @@ header {
       top: -36px;
       padding: 12px 16px; }
     .home .classes .class .day-time {
-      padding: 16px 0; }
+      padding: 16px 0;
+      font-weight: normal; }
 
 @media all and (min-width: 768px) {
   .home .banner {
@@ -487,11 +497,11 @@ header {
         font-size: initial;
         padding: 12px;
         line-height: 50px;
-        box-shadow: 24px 0 0 #000, -24px 0 0 #000; }
+        box-shadow: 18px 0 0 #000, -18px 0 0 #000; }
   .home .classes {
     margin-top: 32px; }
     .home .classes .class {
-      width: 228px;
+      width: 238px;
       height: 220px; }
       .home .classes .class img {
         width: auto;

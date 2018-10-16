@@ -1,8 +1,21 @@
 header {
   display: flex;  
-  align-items: baseline;  
+  align-items: baseline;
+  justify-content: space-between;
   .logo {
-    width: 88px;
+    width: 65px;
     margin-right: $margin-default;    
+  }  
+  .brand {
+    display: flex;
+    align-items: flex-end;
+    .brand-title {
+      text-transform: uppercase;
+      font-weight: normal;
+      font-size: 28px;
+      span {
+        font-size: 12px;
+      }
+    }        
   }  
 }
