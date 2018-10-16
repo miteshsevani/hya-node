@@ -6,47 +6,57 @@
     "classes": [      
       {
         "className" : "english",
+        "icon" : "../images/icons/english.png",
         "subject" : "English",
-        "year" : "Years 1 to 7",
+        "years" : "Years 1 to 7",
         "day" : "Saturday",
         "time" : "12.30 to 13.30",
-        "venue" : "Plumstead Manor School<br />Old Mill Road<br />Plumstead<br />SE18 1QF"
+        "venue" : "Plumstead Manor School<br />Old Mill Road<br />Plumstead, SE18 1QF"
       },
       {
         "className" : "maths",
+        "icon" : "../images/icons/maths.png",
         "subject" : "Maths",
-        "year" : "Years 1 to 13",
+        "years" : "Years 1 to 13",
         "day" : "Saturday",
         "time" : "12.30 to 14.30",
-        "venue" : "Plumstead Manor School<br />Old Mill Road<br />Plumstead<br />SE18 1QF"
+        "venue" : "Plumstead Manor School<br />Old Mill Road<br />Plumstead, SE18 1QF"
       },            
       {
         "className" : "gujarati",
+        "icon" : "../images/icons/gujarati.png",
         "subject" : "Gujarati",
+        "years" : "Up to A Levels",
         "day" : "Saturday",
         "time" : "15.00 to 17.00",
-        "venue" : "Plumstead Manor School<br />Old Mill Road<br />Plumstead<br />SE18 1QF"
+        "venue" : "Plumstead Manor School<br />Old Mill Road<br />Plumstead, SE18 1QF"
       },
       {
         "className" : "yoga",
+        "icon" : "../images/icons/yoga.png",
         "subject" : "Yoga",
+        "years" : "All ages",
         "day" : "Tuesday",
         "time" : "18.30 to 19.30",
-        "venue" : "Glyndon Community Centre<br />Raglan Road<br />Woolwich<br />SE18 7LB"
+        "venue" : "Glyndon Community Centre<br />Raglan Road<br />Woolwich, SE18 7LB"
       },
       {
         "className" : "hinduism",
+        "icon" : "../images/icons/hinduism.png",
         "subject" : "Hindusim",
+        "years" : "Up to GCSE",
         "day" : "Thursday",
         "time" : "19.30 to 21.00",
-        "venue" : "Plumstead Manor School<br />Old Mill Road<br />Plumstead<br />SE18 1QF"
+        "venue" : "Plumstead Manor School<br />Old Mill Road<br />Plumstead, SE18 1QF"
       },
       {
         "className" : "toddlers",
+        "icon" : "../images/icons/toddlers.png",
         "subject" : "Toddler's Group",
+        "years" : "Under 5's",
         "day" : "Saturday",
         "time" : "10.30 to 11.30",
-        "venue" : "Plumstead Manor School<br />Old Mill Road<br />Plumstead<br />SE18 1QF"
+        "venue" : "Plumstead Manor School<br />Old Mill Road<br />Plumstead, SE18 1QF"
       }      
     ]    
   },

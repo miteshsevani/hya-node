@@ -4,10 +4,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url('../images/reading.jpg');
-    background-size: cover;
-    width: 100%;
-    height: 400px;    
+    background: url('../images/reading.jpg') top/cover no-repeat;
+    background-position-y: -32px;    
+    height: 230px;
+    margin-bottom: $margin-default;
     &:after {
       content: "";
       background-color: rgba(0,0,0,0.4);
@@ -17,18 +17,18 @@
     }
     .banner-heading {
       position: absolute;
-      text-align: center;
-      padding: $margin-xl;
+      text-align: right;
+      padding: $margin-lg;
       color: #ffffff;
       text-transform: uppercase;
-      h1 {        
+      h4 {        
+        font-size: 14px;
         background: #000;
         display: inline;
-        padding: $margin-default;
-        line-height: 50px;
-        box-shadow: 24px 0 0 #000, -24px 0 0 #000;
-      }
-      
+        padding: $margin-sm;
+        line-height: 24px;
+        box-shadow: 8px 0 0 #000, 8px 0 0 #000;
+      }      
     }
   }
   .classes {
@@ -37,38 +37,62 @@
     flex-wrap: wrap;
     justify-content: center;
     text-align: center;
+    margin-top: $margin-default;
     .class {
       border: 2px solid $color-border;
       border-radius: 15px;
       width: 100%;      
-      margin: $margin-xl;
+      height: 200px;
+      margin: $margin-xl $margin-xl $margin-xl*2 $margin-xl;
       padding: $margin-default*2 $margin-default;
       position: relative;
       display: flex;      
       flex-direction: column;
       align-items: center;
-      text-align: center;
-      h3 {
-        position: absolute;
-        top: -18px;
-        background: #ffffff;
+      justify-content: flex-end;
+      h3 {        
         padding: 0 $margin-lg;
+        z-index: 1;
       }
-      > div {
-        padding: $margin-sm;
-      }
-      &.maths {
-        background: url('../images/icons/maths.png') no-repeat center/50%;
-      }
+      img {
+        position: absolute;
+        background: #ffffff;
+        width: 50px;
+        top: -36px;
+        padding: $margin-default $margin-lg;
+      }   
+      .day-time {
+        padding: $margin-lg 0;
+      }   
     }
   }  
 }
 
 @include breakpoint(tablet) {
   .home {
+    .banner {      
+      height: 350px;
+      margin-bottom: $margin-xl;
+      .banner-heading {        
+        padding: $margin-xl*2;
+        h4 {        
+          font-size: initial;
+          padding: $margin-default;
+          line-height: 50px;
+          box-shadow: 24px 0 0 #000, -24px 0 0 #000;
+        }      
+      }
+    }
     .classes {
+      margin-top: $margin-xl;
       .class {
-        width: 238px;
+        width: 228px;
+        height: 220px;
+        img {
+          width: auto;
+          top: -56px;
+          padding: $margin-lg $margin-xl;
+        }
       }
     }
   } 
