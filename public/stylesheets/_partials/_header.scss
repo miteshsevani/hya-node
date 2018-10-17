@@ -1,20 +1,27 @@
+header {
+  display: flex;    
+  flex-direction: column;
+  padding-bottom: $margin-sm;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+  .logo {
+    width: 65px;
+    margin-right: $margin-default;    
+  }  
+  .brand {
+    display: flex;    
+    .brand-title {
+      font: 700 18px $font-family-header;
+      text-transform: uppercase;
+      align-self: center;
+      margin-top: $margin-md;
+    }        
+  }  
+}
+
 @include breakpoint(tablet) { 
   header {
-    display: flex;    
+    flex-direction: row;
     justify-content: space-between;
-    .logo {
-      width: 65px;
-      margin-right: $margin-default;    
-    }  
-    .brand {
-      display: flex;    
-      .brand-title {
-        font: 700 18px $font-family-header;
-        text-transform: uppercase;
-        align-self: center;
-        margin-top: 20px;
-      }        
-    }  
   }
 }
 

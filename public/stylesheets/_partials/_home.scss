@@ -32,6 +32,7 @@
   }
   .title {
     text-align: center;
+    font-size: 28px;
   }
   .classes {
     width: 100%;
@@ -84,7 +85,7 @@
   .home {
     .banner {      
       height: 350px;
-      margin-bottom: $margin-xl;
+      margin-bottom: $margin-lg;
       .banner-heading {        
         padding: $margin-xl*2;
         h4 {        
@@ -94,6 +95,9 @@
           box-shadow: 18px 0 0 #000, -18px 0 0 #000;
         }      
       }
+    }
+    .title {
+      font-size: 34px;
     }
     .classes {
       margin-top: $margin-xl;      

@@ -379,31 +379,54 @@ img {
     max-width: 992px;
     margin: 0 auto; } }
 
+header {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2); }
+  header .logo {
+    width: 65px;
+    margin-right: 8px; }
+  header .brand {
+    display: flex; }
+    header .brand .brand-title {
+      font: 700 18px "Montserrat", Helvetica, Arial, sans-serif;
+      text-transform: uppercase;
+      align-self: center;
+      margin-top: 12px; }
+
 @media all and (min-width: 768px) {
   header {
-    display: flex;
-    justify-content: space-between; }
-    header .logo {
-      width: 65px;
-      margin-right: 8px; }
-    header .brand {
-      display: flex; }
-      header .brand .brand-title {
-        font: 700 18px "Montserrat", Helvetica, Arial, sans-serif;
-        text-transform: uppercase;
-        align-self: center;
-        margin-top: 20px; } }
+    flex-direction: row;
+    justify-content: space-between; } }
 
 @media all and (min-width: 992px) {
   header .brand .brand-title {
     font-size: 28px; } }
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  nav ul {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    list-style-type: none;
+    padding: 0;
+    margin: 0; }
+    nav ul li {
+      padding: 0 8px; }
+      nav ul li a {
+        color: #EF6C00;
+        font-weight: normal; }
 
 @media all and (min-width: 768px) {
   nav {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    margin-top: 20px; }
+    margin-top: 12px; }
     nav ul {
       display: flex;
       justify-content: flex-end;
@@ -412,7 +435,7 @@ img {
       padding: 0;
       margin: 0; }
       nav ul li {
-        padding: 0 4px; }
+        padding: 0 8px; }
         nav ul li a {
           color: #EF6C00;
           font-weight: normal; }
@@ -438,7 +461,7 @@ img {
 
 @media all and (min-width: 992px) {
   nav ul li {
-    padding: 0 8px; } }
+    padding: 0 16px; } }
 
 .home .banner {
   position: relative;
@@ -469,7 +492,8 @@ img {
       box-shadow: 8px 0 0 #000, 8px 0 0 #000; }
 
 .home .title {
-  text-align: center; }
+  text-align: center;
+  font-size: 28px; }
 
 .home .classes {
   width: 100%;
@@ -510,7 +534,7 @@ img {
 @media all and (min-width: 768px) {
   .home .banner {
     height: 350px;
-    margin-bottom: 32px; }
+    margin-bottom: 16px; }
     .home .banner .banner-heading {
       padding: 64px; }
       .home .banner .banner-heading h4 {
@@ -518,6 +542,8 @@ img {
         padding: 12px;
         line-height: 50px;
         box-shadow: 18px 0 0 #000, -18px 0 0 #000; }
+  .home .title {
+    font-size: 34px; }
   .home .classes {
     margin-top: 32px; }
     .home .classes .class {
@@ -537,8 +563,18 @@ img {
       width: 270px; } }
 
 @media all and (min-width: 768px) {
-  nav.sub-nav ul li a {
-    color: #288ECE; } }
+  nav.sub-nav {
+    justify-content: center; }
+    nav.sub-nav ul li {
+      padding: 0 32px; }
+      nav.sub-nav ul li a {
+        color: #414042; }
+        nav.sub-nav ul li a:hover {
+          font-weight: 500; }
+        nav.sub-nav ul li a.active {
+          font-weight: 500;
+          border-bottom: 2px solid #288ECE;
+          padding: 4px 8px; } }
 
 footer {
   display: flex;
