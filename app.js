@@ -1,10 +1,13 @@
 var createError = require('http-errors');
 var express = require('express');
+var helmet = require('helmet');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var sassMiddleware = require('node-sass-middleware');
+var compression = require('compression');
 
+// Set routes variables
 var indexRouter = require('./routes/index');
 var aboutRouter = require('./routes/about');
 var keydatesRouter = require('./routes/keydates');
@@ -16,6 +19,7 @@ var app = express();
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
+app.use(helmet());
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
@@ -26,8 +30,13 @@ app.use(sassMiddleware({
   indentedSyntax: false, // true = .sass and false = .scss
   sourceMap: true
 }));
+
+//Compress all routes
+app.use(compression());
+
 app.use(express.static(path.join(__dirname, 'public')));
 
+// Set routes
 app.use('/', indexRouter);
 app.use('/about', aboutRouter);
 app.use('/keydates', keydatesRouter);
