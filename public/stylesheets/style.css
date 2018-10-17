@@ -316,6 +316,24 @@ template {
   font-style: normal; }
 
 @font-face {
+  font-family: 'Montserrat';
+  src: url("../fonts/Montserrat-700.woff2") format("woff2"), url("../fonts/Montserrat-700.woff") format("woff");
+  font-weight: 700;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../fonts/Montserrat-800.woff2") format("woff2"), url("../fonts/Montserrat-800.woff") format("woff");
+  font-weight: 800;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url("../fonts/Montserrat-900.woff2") format("woff2"), url("../fonts/Montserrat-900.woff") format("woff");
+  font-weight: 900;
+  font-style: normal; }
+
+@font-face {
   font-family: 'Roboto';
   src: url("../fonts/Roboto-regular.woff2") format("woff2"), url("../fonts/Roboto-regular.woff") format("woff");
   font-weight: normal;
@@ -353,6 +371,8 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0; }
 
 .content {
+  display: flex;
+  flex-direction: column;
   padding: 16px 0;
   line-height: 1.5; }
 
@@ -383,9 +403,8 @@ header {
     display: flex;
     align-items: flex-end; }
     header .brand .brand-title {
-      text-transform: uppercase;
-      font-weight: normal;
-      font-size: 28px; }
+      font: 700 28px "Montserrat", Helvetica, Arial, sans-serif;
+      text-transform: uppercase; }
       header .brand .brand-title span {
         font-size: 12px; }
 

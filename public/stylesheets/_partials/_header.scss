@@ -10,9 +10,8 @@ header {
     display: flex;
     align-items: flex-end;
     .brand-title {
+      font: 700 28px $font-family-header;
       text-transform: uppercase;
-      font-weight: normal;
-      font-size: 28px;
       span {
         font-size: 12px;
       }

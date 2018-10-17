@@ -1,11 +1,21 @@
 <%- include('includes/header.ejs'); %>
 
 <section class="content">
-  <h1>About us</h1>
-  <%- include('about/objectives.ejs', {data:data.objectives}); %>
-  <%- include('about/history.ejs', {data:data.history}); %>
-  <%- include('about/committee.ejs', {data:data.committee}); %>
-  <%- include('about/volunteers.ejs', {data:data.volunteers}); %>
+  <section class="sidebar">
+<ul>
+  <li>objectives</li>
+  <li>History</li>
+  <li>Committee</li>
+  <li>Volunteers</li>
+</ul>
+  </section>
+  <section class="main">
+    <h1>About us</h1>
+    <%- include('about/objectives.ejs', {data:data.objectives}); %>
+    <%- include('about/history.ejs', {data:data.history}); %>
+    <%- include('about/committee.ejs', {data:data.committee}); %>
+    <%- include('about/volunteers.ejs', {data:data.volunteers}); %>
+  </section>  
 </section>
 
 <%- include('includes/footer.ejs'); %>

@@ -23,6 +23,14 @@
 }
 
 @font-face {
+  font-family: 'Montserrat';
+  src: url('../fonts/Montserrat-700.woff2') format('woff2'),
+  url('../fonts/Montserrat-700.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
   font-family: 'Roboto';
   src: url('../fonts/Roboto-regular.woff2') format('woff2'),
   url('../fonts/Roboto-regular.woff') format('woff');
