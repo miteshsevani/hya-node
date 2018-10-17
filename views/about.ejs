@@ -2,15 +2,18 @@
 
 <section class="content">
   <section class="sidebar">
-<ul>
-  <li>objectives</li>
-  <li>History</li>
-  <li>Committee</li>
-  <li>Volunteers</li>
-</ul>
+    <nav class="sub-nav">
+      <ul>
+        <li><a href="#objectives">Objectives</a></li>
+        <li><a href="#history">History</a></li>
+        <li><a href="#committee">Committee</a></li>
+        <li><a href="#volunteers">Volunteers</a></li>
+      </ul>
+    </nav>
   </section>
   <section class="main">
-    <h1>About us</h1>
+    <h2 class="title">About us</h2>
+    <%- data.intro %>    
     <%- include('about/objectives.ejs', {data:data.objectives}); %>
     <%- include('about/history.ejs', {data:data.history}); %>
     <%- include('about/committee.ejs', {data:data.committee}); %>

@@ -365,7 +365,6 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.5; }
 
 .title {
-  text-align: center;
   margin-top: 16px;
   color: #288ECE; }
 
@@ -469,6 +468,9 @@ img {
       padding: 2px;
       box-shadow: 8px 0 0 #000, 8px 0 0 #000; }
 
+.home .title {
+  text-align: center; }
+
 .home .classes {
   width: 100%;
   display: flex;
@@ -533,6 +535,10 @@ img {
     justify-content: space-between; }
     .home .classes .class {
       width: 270px; } }
+
+@media all and (min-width: 768px) {
+  nav.sub-nav ul li a {
+    color: #288ECE; } }
 
 footer {
   display: flex;

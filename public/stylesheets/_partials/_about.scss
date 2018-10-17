@@ -1,0 +1,11 @@
+@include breakpoint(tablet) {
+  nav.sub-nav { 
+    ul {
+      li {
+        a {
+          color: $color-secondary;
+        }
+      }
+    }
+  }
+}
