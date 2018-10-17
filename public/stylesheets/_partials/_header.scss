@@ -1,20 +1,29 @@
-header {
-  display: flex;  
-  align-items: baseline;
-  justify-content: space-between;
-  .logo {
-    width: 65px;
-    margin-right: $margin-default;    
-  }  
-  .brand {
-    display: flex;
-    align-items: flex-end;
-    .brand-title {
-      font: 700 28px $font-family-header;
-      text-transform: uppercase;
-      span {
-        font-size: 12px;
-      }
-    }        
-  }  
+@include breakpoint(tablet) { 
+  header {
+    display: flex;    
+    justify-content: space-between;
+    .logo {
+      width: 65px;
+      margin-right: $margin-default;    
+    }  
+    .brand {
+      display: flex;    
+      .brand-title {
+        font: 700 18px $font-family-header;
+        text-transform: uppercase;
+        align-self: center;
+        margin-top: 20px;
+      }        
+    }  
+  }
+}
+
+@include breakpoint(desktop) { 
+  header {        
+    .brand {      
+      .brand-title {
+        font-size: 28px;
+      }        
+    }  
+  }
 }

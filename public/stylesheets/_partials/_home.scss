@@ -25,8 +25,7 @@
         font-size: 14px;
         background: #000;
         display: inline;
-        padding: $margin-sm;
-        line-height: 24px;
+        padding: $margin-sm/2;        
         box-shadow: 8px 0 0 #000, 8px 0 0 #000;
       }      
     }
@@ -35,21 +34,24 @@
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
     text-align: center;
     margin-top: $margin-default;
     .class {
       border: 2px solid $color-border;
       border-radius: 15px;
-      width: 100%;      
+      width: 270px;
       height: 200px;
-      margin: $margin-xl;
+      margin: $margin-xl 0;
       padding: $margin-default*2 $margin-default;
       position: relative;
       display: flex;      
       flex-direction: column;
       align-items: center;
       justify-content: flex-end;
+      &:last-child {
+        margin-bottom: 0;
+      }
       h3 {        
         padding: 0 $margin-lg;
         z-index: 1;
@@ -60,10 +62,16 @@
         width: 50px;
         top: -36px;
         padding: $margin-default $margin-lg;
-      }   
+      }      
       .day-time {
         padding: $margin-lg 0;        
         font-weight: normal;
+      }
+      &.yoga,
+      &.hinduism {
+        img {
+          top: -50px;
+        }
       }   
     }
   }  
@@ -78,23 +86,40 @@
         padding: $margin-xl*2;
         h4 {        
           font-size: initial;
-          padding: $margin-default;
+          padding: $margin-md;
           line-height: 50px;
           box-shadow: 18px 0 0 #000, -18px 0 0 #000;
         }      
       }
     }
     .classes {
-      margin-top: $margin-xl;
+      margin-top: $margin-xl;      
       .class {
-        width: 238px;
+        width: 296px;
         height: 220px;
         img {
           width: auto;
           top: -56px;
           padding: $margin-lg $margin-xl;
         }
+        &.yoga,
+        &.hinduism {
+          img {
+            top: -56px;
+          }
+        }   
       }
     }
   } 
+}
+
+@include breakpoint(desktop) {
+  .home {
+    .classes {
+      justify-content: space-between;
+      .class {
+        width: 270px;
+      }
+    }
+  }
 }
