@@ -1,13 +1,16 @@
-header {
-  max-width: 992px;
-  margin: 0 auto;
-  display: flex;    
-  flex-direction: column;    
+header {    
+  background: rgba(0,0,0,0.9);
+  padding: $margin-default 0;
   position: -webkit-sticky;
   position: sticky;
-  top: 0;
-  background: #fff;
-  z-index: 100;
+  top: 0;  
+  z-index: 100;  
+  .header-wrapper {
+    max-width: 992px;
+    margin: 0 auto;
+    display: flex;    
+    flex-direction: column;    
+  }  
   .logo {
     width: 65px;
     margin-right: $margin-default;    
@@ -19,23 +22,29 @@ header {
       text-transform: uppercase;
       align-self: center;
       margin-top: $margin-md;
+      color: rgba(255,255,255,0.8);
     }        
   }  
+  
 }
 
 @include breakpoint(tablet) { 
   header {
-    flex-direction: row;
-    justify-content: space-between;    
+    .header-wrapper {
+      flex-direction: row;
+      justify-content: space-between;    
+    }
   }
 }
 
 @include breakpoint(desktop) { 
   header {        
-    .brand {      
-      .brand-title {
-        font-size: 28px;
-      }        
-    }  
+    .header-wrapper {
+      .brand {      
+        .brand-title {
+          font-size: 28px;
+        }        
+      }  
+    }
   }
 }
