@@ -1,6 +1,6 @@
 header {    
   background: rgba(0,0,0,0.9);
-  padding: $margin-default 0;
+  padding: $margin-sm $margin-default;
   position: -webkit-sticky;
   position: sticky;
   top: 0;  
@@ -8,20 +8,20 @@ header {
   .header-wrapper {
     max-width: 992px;
     margin: 0 auto;
-    display: flex;    
-    flex-direction: column;    
+    display: flex;
   }  
   .logo {
-    width: 65px;
+    width: 50px;
     margin-right: $margin-default;    
   }  
   .brand {
     display: flex;    
+    
+    align-items: center;
     .brand-title {
-      font: 700 18px $font-family-header;
-      text-transform: uppercase;
-      align-self: center;
-      margin-top: $margin-md;
+      font: 700 15px $font-family-header;
+      text-transform: uppercase;      
+      margin-top: $margin-sm;
       color: rgba(255,255,255,0.8);
     }        
   }
@@ -29,9 +29,18 @@ header {
 
 @include breakpoint(tablet) { 
   header {
-    .header-wrapper {
-      flex-direction: row;
+    .header-wrapper {      
       justify-content: space-between;    
+    }
+    .logo {
+      width: 65px;
+      margin-right: $margin-default;    
+    }  
+    .brand {      
+      .brand-title {
+        font-size: 18px;
+        margin-top: $margin-md;
+      }
     }
   }
 }

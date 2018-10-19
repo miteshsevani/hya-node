@@ -35,7 +35,7 @@ p {
 .content {
   display: flex;
   flex-direction: column;
-  padding: $margin-lg 0;
+  padding: 0 $margin-sm;
   line-height: 1.5;
 }
 
@@ -55,6 +55,12 @@ img {
   }
 }
 
+
+@include breakpoint(tablet) {
+  .content {
+    padding: $margin-lg 0;
+  }
+}
 
 @include breakpoint(desktop) {
   .content {

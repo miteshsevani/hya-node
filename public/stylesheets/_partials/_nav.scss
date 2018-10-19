@@ -1,23 +1,44 @@
+nav {
+  position: absolute;
+  right: 0;
+  background: rgba(0,0,0,0.9);
+  padding: $margin-default;
+  top: 65px;
+  width: 100%;
+  text-align: center;
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    li {
+      padding: $margin-sm 0;
+      a {
+        color: $color-brand;
+        font-weight: normal;
+      }
+    }
+  }  
+}
 
 @include breakpoint(tablet) {
-  nav {
+  nav {        
+    background: none;
+    position: relative;
     display: flex;
+    flex-direction: row;
     justify-content: flex-end;
     align-items: center;
     margin-top: $margin-md;
+    padding: 0;
+    top: 0;
+    width: auto;
+    text-align: center;
     ul {
       display: flex;
       justify-content: flex-end;
-      flex-wrap: wrap;
-      list-style-type: none;
-      padding: 0;
-      margin: 0;
+      flex-wrap: wrap;      
       li {
-        padding: 0 $margin-default;
-        a {
-          color: $color-brand;
-          font-weight: normal;
-        }
+        padding: 0 $margin-default;        
       }
     }
     .social {

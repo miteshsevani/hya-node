@@ -369,7 +369,7 @@ p:last-child {
 .content {
   display: flex;
   flex-direction: column;
-  padding: 16px 0;
+  padding: 0 4px;
   line-height: 1.5; }
 
 .title {
@@ -382,6 +382,10 @@ img {
 .main p:first-of-type {
   font-weight: normal; }
 
+@media all and (min-width: 768px) {
+  .content {
+    padding: 16px 0; } }
+
 @media all and (min-width: 992px) {
   .content {
     max-width: 992px;
@@ -389,7 +393,7 @@ img {
 
 header {
   background: rgba(0, 0, 0, 0.9);
-  padding: 8px 0;
+  padding: 4px 8px;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
@@ -397,47 +401,70 @@ header {
   header .header-wrapper {
     max-width: 992px;
     margin: 0 auto;
-    display: flex;
-    flex-direction: column; }
+    display: flex; }
   header .logo {
-    width: 65px;
+    width: 50px;
     margin-right: 8px; }
   header .brand {
-    display: flex; }
+    display: flex;
+    align-items: center; }
     header .brand .brand-title {
-      font: 700 18px "Montserrat", Helvetica, Arial, sans-serif;
+      font: 700 15px "Montserrat", Helvetica, Arial, sans-serif;
       text-transform: uppercase;
-      align-self: center;
-      margin-top: 12px;
+      margin-top: 4px;
       color: rgba(255, 255, 255, 0.8); }
 
 @media all and (min-width: 768px) {
   header .header-wrapper {
-    flex-direction: row;
-    justify-content: space-between; } }
+    justify-content: space-between; }
+  header .logo {
+    width: 65px;
+    margin-right: 8px; }
+  header .brand .brand-title {
+    font-size: 18px;
+    margin-top: 12px; } }
 
 @media all and (min-width: 992px) {
   header .header-wrapper .brand .brand-title {
     font-size: 28px; } }
 
+nav {
+  position: absolute;
+  right: 0;
+  background: rgba(0, 0, 0, 0.9);
+  padding: 8px;
+  top: 65px;
+  width: 100%;
+  text-align: center; }
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0; }
+    nav ul li {
+      padding: 4px 0; }
+      nav ul li a {
+        color: #EF6C00;
+        font-weight: normal; }
+
 @media all and (min-width: 768px) {
   nav {
+    background: none;
+    position: relative;
     display: flex;
+    flex-direction: row;
     justify-content: flex-end;
     align-items: center;
-    margin-top: 12px; }
+    margin-top: 12px;
+    padding: 0;
+    top: 0;
+    width: auto;
+    text-align: center; }
     nav ul {
       display: flex;
       justify-content: flex-end;
-      flex-wrap: wrap;
-      list-style-type: none;
-      padding: 0;
-      margin: 0; }
+      flex-wrap: wrap; }
       nav ul li {
         padding: 0 8px; }
-        nav ul li a {
-          color: #EF6C00;
-          font-weight: normal; }
     nav .social a {
       display: inline-block;
       background-repeat: no-repeat;
