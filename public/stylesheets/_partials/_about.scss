@@ -23,6 +23,27 @@
             }          
           }
         }
+      }      
+    }
+    section {
+      padding-bottom: $margin-lg;
+    }
+    #committee,
+    #volunteers {
+      .wrapper {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        .member {
+          width: calc(25% - #{$margin-default*2});
+          margin: $margin-lg 0;
+          .name {
+            font-weight: normal;
+          }
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
       }
     }
   }

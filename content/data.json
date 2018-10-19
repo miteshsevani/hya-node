@@ -68,42 +68,201 @@
       "title" : "Committee Members",
       "members": [
         {
-          "name" : "",
-          "role" : ""
+          "name" : "Kanta Hirji",
+          "role" : "President/Trustee"
         },
         {
-          "name" : "",
-          "role" : ""
+          "name" : "Jaynti Kerai",
+          "role" : "Vice President"
         },
         {
-          "name" : "",
-          "role" : ""
+          "name" : "Trusha Dabasia",
+          "role" : "Secretary"
         },
         {
-          "name" : "",
-          "role" : ""
+          "name" : "Darshita Rabadia",
+          "role" : "Vice Secretary"
+        },
+        {
+          "name" : "Hiten Rabadia",
+          "role" : "Treasurer"
+        },
+        {
+          "name" : "Pritesh Patel",
+          "role" : "Vice Treasurer"
+        },
+        {
+          "name" : "Deepa Dabasia",
+          "role" : "Education Co-ordinator"
+        },
+        {
+          "name" : "Vijyaben Samji",
+          "role" : "Vice Education Co-ordinator"
+        },
+        {
+          "name" : "Reena Rabadia",
+          "role" : "Physical Co-ordinator"
+        },
+        {
+          "name" : "Hirjibhai Shiyani",
+          "role" : "Trustee"
+        },
+        {
+          "name" : "Ramjibhai Vekaria",
+          "role" : "Trustee"
+        },
+        {
+          "name" : "Paresh Dabasia",
+          "role" : "Trustee"
+        },
+        {
+          "name" : "Kantibhai Chhabhadiya",
+          "role" : "Co-opted Member"
+        },
+        {
+          "name" : "Sukanthay Sivakumaran",
+          "role" : "Co-opted Member"
+        },
+        {
+          "name" : "Sridevi Thayalan",
+          "role" : "Co-opted Member"
+        },
+        {
+          "name" : "Govindbhai Sevani",
+          "role" : "Co-opted Member"
+        },{
+          "name" : "Rajesh Kerai",
+          "role" : "Co-opted Member"
         }
       ]
     },
     "volunteers": {
       "page" : "volunteers",
       "title" : "Volunteers",
-      "volunteerNames" : [
+      "volunteers" : [
         {
-          "name" : "",
-          "role" : ""
+          "name" : "Vashi Bhanderi",
+          "role" : "English, Maths (Year 1)"
         },
         {
-          "name" : "",
-          "role" : ""
+          "name" : "Pardeep Koria",
+          "role" : "English, Maths (Year 2)"
         },
         {
-          "name" : "",
-          "role" : ""
+          "name" : "Disha Rabadia",
+          "role" : "English, Maths (Year 3)"
         },
         {
-          "name" : "",
-          "role" : ""
+          "name" : "Deepa Dabasia",
+          "role" : "English Maths (Year 3)"
+        },
+        {
+          "name" : "Vijayaben Samji",
+          "role" : "English (Year 4a)"
+        },
+        {
+          "name" : "Sukanthay Sivakumaran",
+          "role" : "Maths (Year 4a)"
+        },
+        {
+          "name" : "Neelam Chhabhadiya",
+          "role" : "Maths, English (Year 4b)"
+        },
+        {
+          "name" : "Vimal Bhanderi",
+          "role" : "Maths, English (Year 4b)"
+        },
+        {
+          "name" : "Binal Bhanderi",
+          "role" : "English (Years 5 and 6)"
+        },
+        {
+          "name" : "Umesh Hirji",
+          "role" : "Maths (Years 5 and 6)"
+        },
+        {
+          "name" : "Reena Rabadia",
+          "role" : "English (Year 7)"
+        },
+        {
+          "name" : "Pritesh Patel",
+          "role" : "Maths (Year 7)"
+        },
+        {
+          "name" : "Nilesh Bhanderi",
+          "role" : "Maths (Years 8 and 9)"
+        },
+        {
+          "name" : "Bhavin Dhokia",
+          "role" : "Maths (Years 8 and 9)"
+        },
+        {
+          "name" : "Jabesh Baskaren",
+          "role" : "Maths (Years 8 and 9)"
+        },
+        {
+          "name" : "Jaya Shiyani",
+          "role" : "Maths (Years 10 and 11)"
+        },
+        {
+          "name" : "Dev Sevani",
+          "role" : "Maths (Year 12)"
+        },
+        {
+          "name" : "Govindbhai Sevani",
+          "role" : "Gujarati"
+        },
+        {
+          "name" : "Ushni Rabadia",
+          "role" : "Gujarati"
+        },
+        {
+          "name" : "Arjanbhai Rabadia",
+          "role" : "Gujarati"
+        },
+        {
+          "name" : "Vasantbhai Rajgor",
+          "role" : "Gujarati"
+        },
+        {
+          "name" : "Hirjibhai Shiyani",
+          "role" : "Gujarati"
+        },
+        {
+          "name" : "Ramjibhai Vekriya",
+          "role" : "Gujarati"
+        },
+        {
+          "name" : "Manisha Sevani",
+          "role" : "Gujarati"
+        },
+        {
+          "name" : "Jaynti Kerai",
+          "role" : "Gujarati"
+        },
+        {
+          "name" : "Govind Shiyani",
+          "role" : "Hinduism"
+        },
+        {
+          "name" : "Bipin Bhanderi",
+          "role" : "Hinduism"
+        },
+        {
+          "name" : "Kanjibhai Patel",
+          "role" : "Hinduism"
+        },
+        {
+          "name" : "Anita Patel",
+          "role" : "Hinduism"
+        },
+        {
+          "name" : "Thibagaran Baskaren",
+          "role" : "Hinduism"
+        },
+        {
+          "name" : "Krishna Vekriya",
+          "role" : "Hinduism"
         }
       ]
     },    

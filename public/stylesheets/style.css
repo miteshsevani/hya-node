@@ -360,6 +360,12 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 500;
   margin: 0; }
 
+p:first-of-type {
+  margin-top: 0; }
+
+p:last-child {
+  margin-bottom: 0; }
+
 .content {
   display: flex;
   flex-direction: column;
@@ -574,7 +580,24 @@ header {
         .about .subnav ul li a.active {
           font-weight: 500;
           border-bottom: 2px solid #288ECE;
-          padding: 4px 8px; } }
+          padding: 4px 8px; }
+  .about section {
+    padding-bottom: 16px; }
+  .about #committee .wrapper,
+  .about #volunteers .wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; }
+    .about #committee .wrapper .member,
+    .about #volunteers .wrapper .member {
+      width: calc(25% - 16px);
+      margin: 16px 0; }
+      .about #committee .wrapper .member .name,
+      .about #volunteers .wrapper .member .name {
+        font-weight: normal; }
+      .about #committee .wrapper .member:last-child,
+      .about #volunteers .wrapper .member:last-child {
+        margin-bottom: 0; } }
 
 footer {
   max-width: 992px;
