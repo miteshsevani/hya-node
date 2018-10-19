@@ -1,7 +1,13 @@
 @include breakpoint(tablet) {
-  .about {
+  .about {    
     .subnav { 
       justify-content: center;
+      position: -webkit-sticky; /* Safari */
+      position: sticky;
+      top: 76px;
+      background: white;
+      padding: $margin-sm;
+      margin-top: 0;
       ul {
         li {
           padding: 0 $margin-xl;        
