@@ -1,19 +1,21 @@
 @include breakpoint(tablet) {
-  nav.sub-nav { 
-    justify-content: center;
-    ul {
-      li {
-        padding: 0 $margin-xl;        
-        a {
-          color: $color-text-secondary;
-          &:hover {
-            font-weight: 500;
+  .about {
+    .subnav { 
+      justify-content: center;
+      ul {
+        li {
+          padding: 0 $margin-xl;        
+          a {
+            color: $color-text-secondary;
+            &:hover {
+              font-weight: 500;
+            }
+            &.active {            
+              font-weight: 500;
+              border-bottom: 2px solid $color-secondary;
+              padding: $margin-sm $margin-default;
+            }          
           }
-          &.active {            
-            font-weight: 500;
-            border-bottom: 2px solid $color-secondary;
-            padding: $margin-sm $margin-default;
-          }          
         }
       }
     }

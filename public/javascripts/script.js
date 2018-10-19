@@ -1,5 +1,5 @@
 // Subnav active state
-var subnavList = document.querySelectorAll('.sub-nav a');;
+var subnavList = document.querySelectorAll('.subnav a');;
 var subnavListArray = []; 
 
 // Create array from subnav links list

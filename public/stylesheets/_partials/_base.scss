@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {    
   font: 300 $font-size-default $font-family-default;
   color: $color-text;  
@@ -46,7 +50,7 @@ img {
 
 
 @include breakpoint(desktop) {
-  .wrapper {
+  .content {
     max-width: $width-desktop;
     margin: 0 auto;
   }
