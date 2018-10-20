@@ -14,7 +14,11 @@
       padding: $margin-default 0;
       a {
         color: $color-brand;
+        color: white;
         font-weight: normal;
+        &:hover {
+          color: $color-brand;
+        }
       }
     }
   }    

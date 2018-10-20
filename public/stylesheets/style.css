@@ -460,7 +460,10 @@ header {
       padding: 8px 0; }
       .main-nav ul li a {
         color: #EF6C00;
+        color: white;
         font-weight: normal; }
+        .main-nav ul li a:hover {
+          color: #EF6C00; }
 
 @media all and (min-width: 768px) {
   .main-nav {
