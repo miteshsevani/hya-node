@@ -410,9 +410,9 @@ header {
     display: flex;
     align-items: center; }
     header .brand .brand-title {
-      font: 700 15px "Montserrat", Helvetica, Arial, sans-serif;
+      font: 500 15px "Montserrat", Helvetica, Arial, sans-serif;
       text-transform: uppercase;
-      margin-top: 4px;
+      margin-top: 8px;
       color: rgba(255, 255, 255, 0.8); }
 
 @media all and (min-width: 768px) {
@@ -425,7 +425,7 @@ header {
     margin-right: 8px; }
   header .brand .brand-title {
     font-size: 18px;
-    margin-top: 8px; } }
+    margin-top: 12px; } }
 
 @media all and (min-width: 992px) {
   header .header-wrapper .brand .brand-title {
