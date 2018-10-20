@@ -16,8 +16,7 @@
       display: block;            
     }
     .banner-heading {
-      position: absolute;
-      text-align: right;
+      position: absolute;      
       padding: $margin-lg;
       color: #ffffff;
       text-transform: uppercase;
@@ -25,7 +24,7 @@
         font-size: 14px;
         background: #000;
         display: inline;
-        padding: $margin-sm/2;        
+        padding: $margin-sm/2 0;
         box-shadow: 8px 0 0 #000, 8px 0 0 #000;
       }      
     }
@@ -84,14 +83,15 @@
 @include breakpoint(tablet) {
   .home {
     .banner {      
-      height: 350px;
+      height: 300px;
       margin-bottom: $margin-lg;
       .banner-heading {        
         max-width: $width-tablet;
         padding: $margin-xl*2;
+        text-align: right;
         h4 {        
           font-size: initial;
-          padding: $margin-md;
+          padding: $margin-md 0;
           line-height: 50px;
           box-shadow: 18px 0 0 #000, -18px 0 0 #000;
         }      

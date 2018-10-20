@@ -369,7 +369,7 @@ p:last-child {
 .content {
   display: flex;
   flex-direction: column;
-  padding: 0 4px;
+  padding: 12px;
   line-height: 1.5; }
 
 .title {
@@ -384,12 +384,13 @@ img {
 
 @media all and (min-width: 768px) {
   .content {
-    padding: 16px 0; } }
+    padding: 16px; } }
 
 @media all and (min-width: 992px) {
   .content {
     max-width: 992px;
-    margin: 0 auto; } }
+    margin: 0 auto;
+    padding: 16px 0; } }
 
 header {
   background: rgba(0, 0, 0, 0.9);
@@ -443,7 +444,7 @@ header {
     .nav-dropdown.close {
       background-image: url("../images/icons/close.png"); } }
 
-nav {
+.main-nav {
   position: absolute;
   right: 0;
   background: rgba(0, 0, 0, 0.9);
@@ -451,18 +452,18 @@ nav {
   top: 65px;
   width: 100%;
   text-align: center; }
-  nav ul {
+  .main-nav ul {
     list-style-type: none;
     padding: 0;
     margin: 0; }
-    nav ul li {
+    .main-nav ul li {
       padding: 8px 0; }
-      nav ul li a {
+      .main-nav ul li a {
         color: #EF6C00;
         font-weight: normal; }
 
 @media all and (min-width: 768px) {
-  nav {
+  .main-nav {
     background: none;
     position: relative;
     display: flex;
@@ -474,34 +475,34 @@ nav {
     top: 0;
     width: auto;
     text-align: center; }
-    nav ul {
+    .main-nav ul {
       display: flex;
       justify-content: flex-end;
       flex-wrap: wrap; }
-      nav ul li {
+      .main-nav ul li {
         padding: 0 8px; }
-    nav .social a {
+    .main-nav .social a {
       display: inline-block;
       background-repeat: no-repeat;
       border-radius: 50%;
       margin-left: 8px; }
-      nav .social a.facebook {
+      .main-nav .social a.facebook {
         width: 35px;
         height: 35px;
         background: #4c70ba url("../images/facebook.svg"); }
-        nav .social a.facebook:hover {
+        .main-nav .social a.facebook:hover {
           background-color: #3b5998; }
-      nav .social a.email {
+      .main-nav .social a.email {
         width: 35px;
         height: 35px;
         background: #EF6C00 url("../images/email.svg") no-repeat center; }
-        nav .social a.email:hover {
+        .main-nav .social a.email:hover {
           background-color: #bc5500; }
-      nav .social a:hover {
+      .main-nav .social a:hover {
         transition: 0.3s; } }
 
 @media all and (min-width: 992px) {
-  nav ul li {
+  .main-nav ul li {
     padding: 0 16px; } }
 
 @media all and (max-width: 767px) {
@@ -527,7 +528,6 @@ nav {
     display: block; }
   .home .banner .banner-heading {
     position: absolute;
-    text-align: right;
     padding: 16px;
     color: #ffffff;
     text-transform: uppercase; }
@@ -535,7 +535,7 @@ nav {
       font-size: 14px;
       background: #000;
       display: inline;
-      padding: 2px;
+      padding: 2px 0;
       box-shadow: 8px 0 0 #000, 8px 0 0 #000; }
 
 .home .title {
@@ -580,14 +580,15 @@ nav {
 
 @media all and (min-width: 768px) {
   .home .banner {
-    height: 350px;
+    height: 300px;
     margin-bottom: 16px; }
     .home .banner .banner-heading {
       max-width: 768px;
-      padding: 64px; }
+      padding: 64px;
+      text-align: right; }
       .home .banner .banner-heading h4 {
         font-size: initial;
-        padding: 12px;
+        padding: 12px 0;
         line-height: 50px;
         box-shadow: 18px 0 0 #000, -18px 0 0 #000; }
   .home .title {
@@ -612,26 +613,39 @@ nav {
     .home .classes .class {
       width: 270px; } }
 
+.about .subnav {
+  background: white;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 62px; }
+  .about .subnav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-between; }
+    .about .subnav ul li a {
+      color: #414042;
+      font-weight: 500; }
+      .about .subnav ul li a:hover {
+        border-bottom: 2px solid #288ECE; }
+      .about .subnav ul li a.active {
+        border-bottom: 2px solid #288ECE;
+        padding: 4px 8px; }
+
 @media all and (min-width: 768px) {
   .about .subnav {
+    display: flex;
     justify-content: center;
-    position: -webkit-sticky;
-    /* Safari */
-    position: sticky;
-    top: 72px;
-    background: white;
     padding: 16px;
-    margin-top: 0; }
-    .about .subnav ul li {
-      padding: 0 32px; }
-      .about .subnav ul li a {
-        color: #414042; }
-        .about .subnav ul li a:hover {
-          font-weight: 500; }
-        .about .subnav ul li a.active {
-          font-weight: 500;
-          border-bottom: 2px solid #288ECE;
-          padding: 4px 8px; }
+    margin-top: 0;
+    text-align: center;
+    top: 72px; }
+    .about .subnav ul {
+      list-style-type: none;
+      margin: 0;
+      justify-content: flex-end; }
+      .about .subnav ul li {
+        padding: 0 32px; }
   .about section {
     padding-bottom: 16px; }
   .about #committee .wrapper,

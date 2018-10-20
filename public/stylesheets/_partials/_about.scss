@@ -1,27 +1,46 @@
+.about {    
+  .subnav {
+    background: white;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 62px;
+    ul {
+      list-style-type: none;
+      padding: 0;
+      display: flex;
+      justify-content: space-between;
+      li {
+        a {
+          color: $color-text-secondary;
+          font-weight: 500;
+          &:hover {
+            border-bottom: 2px solid $color-secondary;              
+          }
+          &.active {                          
+            border-bottom: 2px solid $color-secondary;
+            padding: $margin-sm $margin-default;
+          }          
+        }
+      }
+    }
+  }
+}
+
 @include breakpoint(tablet) {
   .about {    
-    .subnav { 
-      justify-content: center;
-      position: -webkit-sticky; /* Safari */
-      position: sticky;
-      top: 72px;
-      background: white;
+    .subnav {     
+      display: flex;
+      justify-content: center;      
       padding: $margin-lg;
       margin-top: 0;
+      text-align: center;
+      top: 72px;
       ul {
+        list-style-type: none;        
+        margin: 0;
+        justify-content: flex-end;        
         li {
-          padding: 0 $margin-xl;        
-          a {
-            color: $color-text-secondary;
-            &:hover {
-              font-weight: 500;
-            }
-            &.active {            
-              font-weight: 500;
-              border-bottom: 2px solid $color-secondary;
-              padding: $margin-sm $margin-default;
-            }          
-          }
+          padding: 0 $margin-xl;          
         }
       }      
     }

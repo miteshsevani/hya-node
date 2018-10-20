@@ -1,4 +1,4 @@
-nav {
+.main-nav {
   position: absolute;
   right: 0;
   background: rgba(0,0,0,0.9);
@@ -21,7 +21,7 @@ nav {
 }
 
 @include breakpoint(tablet) {
-  nav {        
+  .main-nav {        
     background: none;
     position: relative;
     display: flex;
@@ -72,7 +72,7 @@ nav {
 }
 
 @include breakpoint(desktop) {
-  nav {    
+  .main-nav {    
     ul {      
       li {
         padding: 0 $margin-lg;
