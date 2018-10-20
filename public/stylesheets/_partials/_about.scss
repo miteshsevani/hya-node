@@ -24,6 +24,28 @@
       }
     }
   }
+  section {
+    padding-bottom: $margin-lg;
+  }
+  #committee,
+  #volunteers {
+    .wrapper {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      .member {
+        width: calc(50% - #{$margin-default*2});
+        margin: $margin-md 0;
+        .name {
+          font-weight: normal;
+        }
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
 }
 
 @include breakpoint(tablet) {
@@ -44,24 +66,12 @@
         }
       }      
     }
-    section {
-      padding-bottom: $margin-lg;
-    }
     #committee,
     #volunteers {
-      .wrapper {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
+      .wrapper {        
         .member {
-          width: calc(25% - #{$margin-default*2});
-          margin: $margin-lg 0;
-          .name {
-            font-weight: normal;
-          }
-          &:last-child {
-            margin-bottom: 0;
-          }
+          width: calc(25% - #{$margin-xl});
+          margin: $margin-lg 0;                    
         }
       }
     }

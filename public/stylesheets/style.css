@@ -632,6 +632,26 @@ header {
         border-bottom: 2px solid #288ECE;
         padding: 4px 8px; }
 
+.about section {
+  padding-bottom: 16px; }
+
+.about #committee .wrapper,
+.about #volunteers .wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+  .about #committee .wrapper .member,
+  .about #volunteers .wrapper .member {
+    width: calc(50% - 16px);
+    margin: 12px 0; }
+    .about #committee .wrapper .member .name,
+    .about #volunteers .wrapper .member .name {
+      font-weight: normal; }
+    .about #committee .wrapper .member:last-child,
+    .about #volunteers .wrapper .member:last-child {
+      margin-bottom: 0; }
+
 @media all and (min-width: 768px) {
   .about .subnav {
     display: flex;
@@ -646,23 +666,10 @@ header {
       justify-content: flex-end; }
       .about .subnav ul li {
         padding: 0 32px; }
-  .about section {
-    padding-bottom: 16px; }
-  .about #committee .wrapper,
-  .about #volunteers .wrapper {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap; }
-    .about #committee .wrapper .member,
-    .about #volunteers .wrapper .member {
-      width: calc(25% - 16px);
-      margin: 16px 0; }
-      .about #committee .wrapper .member .name,
-      .about #volunteers .wrapper .member .name {
-        font-weight: normal; }
-      .about #committee .wrapper .member:last-child,
-      .about #volunteers .wrapper .member:last-child {
-        margin-bottom: 0; } }
+  .about #committee .wrapper .member,
+  .about #volunteers .wrapper .member {
+    width: calc(25% - 32px);
+    margin: 16px 0; } }
 
 footer {
   max-width: 992px;
