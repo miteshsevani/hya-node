@@ -45,6 +45,11 @@
         padding: 0 $margin-default;        
       }
     }
+    a {
+      &:hover {
+        transition: 0.3s;
+      }
+    }
     .social {
       a {
         display: inline-block;
@@ -66,10 +71,7 @@
           &:hover {
             background-color: $color-hover;
           }                  
-        }
-        &:hover {
-          transition: 0.3s;
-        }
+        }        
       }
     }
   }   

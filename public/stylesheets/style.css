@@ -484,6 +484,8 @@ header {
       flex-wrap: wrap; }
       .main-nav ul li {
         padding: 0 8px; }
+    .main-nav a:hover {
+      transition: 0.3s; }
     .main-nav .social a {
       display: inline-block;
       background-repeat: no-repeat;
@@ -500,9 +502,7 @@ header {
         height: 35px;
         background: #EF6C00 url("../images/email.svg") no-repeat center; }
         .main-nav .social a.email:hover {
-          background-color: #bc5500; }
-      .main-nav .social a:hover {
-        transition: 0.3s; } }
+          background-color: #bc5500; } }
 
 @media all and (min-width: 992px) {
   .main-nav ul li {
