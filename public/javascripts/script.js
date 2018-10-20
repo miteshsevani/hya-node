@@ -1,4 +1,18 @@
-// Subnav active state
+
+/* ###### Main menu mobile toggle nav ###### */
+var navDropdown = document.querySelector(".nav-dropdown");
+
+navDropdown.addEventListener('click', () => {
+  var menu = document.querySelector('.main-nav');
+  menu.classList.toggle("visible");
+  navDropdown.classList.toggle('close');
+})
+
+
+
+
+
+/* ###### About page subnav active state ###### */
 var subnavList = document.querySelectorAll('.subnav a');;
 var subnavListArray = []; 
 
@@ -20,3 +34,8 @@ function removeActive(subnavListArray) {
     subnavListArray[i].classList.remove('active');
   }
 }
+
+
+
+
+

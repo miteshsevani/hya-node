@@ -1,11 +1,11 @@
 <%- include('includes/header.ejs'); %>
 
-<section class="content">  
-  <section class="banner">
-    <div class="banner-heading">
-      <h4><%= data.intro %></h4>
-    </div>
-  </section>  
+<section class="banner">
+  <div class="banner-heading">
+    <h4><%= data.intro %></h4>
+  </div>
+</section>  
+<section class="content">    
   <h1 class="title">Our Classes</h1>
   <section class="classes">       
     <% data.classes.forEach(function(item) { %>

@@ -6,3 +6,9 @@
     @media all and (min-width: $width-desktop) { @content; }
   }  
 }
+
+@mixin below-breakpoint($point) {
+  @if $point == tablet {
+    @media all and (max-width: 767px) { @content; }
+  }
+}

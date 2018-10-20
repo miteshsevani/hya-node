@@ -1,6 +1,6 @@
 header {    
   background: rgba(0,0,0,0.9);
-  padding: $margin-sm $margin-default;
+  padding: $margin-sm $margin-md;
   position: -webkit-sticky;
   position: sticky;
   top: 0;  
@@ -29,17 +29,20 @@ header {
 
 @include breakpoint(tablet) { 
   header {
+    .nav-dropdown {
+      display: none;
+    }
     .header-wrapper {      
       justify-content: space-between;    
     }
     .logo {
-      width: 65px;
+      width: 55px;
       margin-right: $margin-default;    
     }  
     .brand {      
       .brand-title {
         font-size: 18px;
-        margin-top: $margin-md;
+        margin-top: $margin-default;
       }
     }
   }
@@ -50,9 +53,25 @@ header {
     .header-wrapper {
       .brand {      
         .brand-title {
-          font-size: 28px;
+          font-size: 24px;
         }        
       }  
+    }
+  }
+}
+
+@include below-breakpoint(tablet) {
+  .nav-dropdown {
+    position: absolute;
+    right: $margin-default;
+    margin-top: $margin-sm;    
+    align-self: center;
+    background-image: url('../images/icons/menu.png');
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+    &.close {
+      background-image: url('../images/icons/close.png'); 
     }
   }
 }

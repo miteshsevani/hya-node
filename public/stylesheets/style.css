@@ -393,7 +393,7 @@ img {
 
 header {
   background: rgba(0, 0, 0, 0.9);
-  padding: 4px 8px;
+  padding: 4px 12px;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
@@ -415,18 +415,33 @@ header {
       color: rgba(255, 255, 255, 0.8); }
 
 @media all and (min-width: 768px) {
+  header .nav-dropdown {
+    display: none; }
   header .header-wrapper {
     justify-content: space-between; }
   header .logo {
-    width: 65px;
+    width: 55px;
     margin-right: 8px; }
   header .brand .brand-title {
     font-size: 18px;
-    margin-top: 12px; } }
+    margin-top: 8px; } }
 
 @media all and (min-width: 992px) {
   header .header-wrapper .brand .brand-title {
-    font-size: 28px; } }
+    font-size: 24px; } }
+
+@media all and (max-width: 767px) {
+  .nav-dropdown {
+    position: absolute;
+    right: 8px;
+    margin-top: 4px;
+    align-self: center;
+    background-image: url("../images/icons/menu.png");
+    width: 36px;
+    height: 36px;
+    cursor: pointer; }
+    .nav-dropdown.close {
+      background-image: url("../images/icons/close.png"); } }
 
 nav {
   position: absolute;
@@ -441,7 +456,7 @@ nav {
     padding: 0;
     margin: 0; }
     nav ul li {
-      padding: 4px 0; }
+      padding: 8px 0; }
       nav ul li a {
         color: #EF6C00;
         font-weight: normal; }
@@ -489,6 +504,12 @@ nav {
   nav ul li {
     padding: 0 16px; } }
 
+@media all and (max-width: 767px) {
+  .main-nav {
+    display: none; }
+    .main-nav.visible {
+      display: block; } }
+
 .home .banner {
   position: relative;
   display: flex;
@@ -525,7 +546,7 @@ nav {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: space-evenly;
   text-align: center;
   margin-top: 8px; }
   .home .classes .class {
@@ -533,7 +554,7 @@ nav {
     border-radius: 15px;
     width: 270px;
     height: 200px;
-    margin: 32px 0;
+    margin: 32px 16px;
     padding: 16px 8px;
     position: relative;
     display: flex;
@@ -562,6 +583,7 @@ nav {
     height: 350px;
     margin-bottom: 16px; }
     .home .banner .banner-heading {
+      max-width: 768px;
       padding: 64px; }
       .home .banner .banner-heading h4 {
         font-size: initial;
@@ -583,6 +605,8 @@ nav {
         top: -56px; } }
 
 @media all and (min-width: 992px) {
+  .home .banner {
+    background-position-y: -82px; }
   .home .classes {
     justify-content: space-between; }
     .home .classes .class {

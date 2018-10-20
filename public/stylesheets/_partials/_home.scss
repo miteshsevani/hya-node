@@ -38,7 +38,7 @@
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
     text-align: center;
     margin-top: $margin-default;
     .class {
@@ -46,7 +46,7 @@
       border-radius: 15px;
       width: 270px;
       height: 200px;
-      margin: $margin-xl 0;
+      margin: $margin-xl $margin-lg;
       padding: $margin-default*2 $margin-default;
       position: relative;
       display: flex;      
@@ -87,6 +87,7 @@
       height: 350px;
       margin-bottom: $margin-lg;
       .banner-heading {        
+        max-width: $width-tablet;
         padding: $margin-xl*2;
         h4 {        
           font-size: initial;
@@ -122,6 +123,9 @@
 
 @include breakpoint(desktop) {
   .home {
+    .banner {
+      background-position-y: -82px;
+    }
     .classes {
       justify-content: space-between;
       .class {
