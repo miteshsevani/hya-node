@@ -263,6 +263,10 @@
         {
           "name" : "Krishna Vekriya",
           "role" : "Hinduism"
+        },
+        {
+          "name" : "",
+          "role" : ""
         }
       ]
     },    
@@ -288,8 +292,217 @@
     }    
   },
   "keydates": {
-    "page" : "key-dates",
+    "page" : "keydates",
     "title" : "Key Dates",
-    "body" : "Key dates page body"
+    "calendar" : [
+      {                
+        "month" : "September 2018",
+        "events" : [
+          {
+            "date" : "6<sup>th</sup> September",
+            "event" : "Hinduism Classes Start"
+          },
+          {
+            "date" : "8<sup>th</sup> September",
+            "event" : "English, Maths and Gujarati Classes Start"
+          },
+          {
+            "date" : "22<sup>nd</sup> September",
+            "event" : "Shishu Samelan (Fun Day). No Gujarati Classes, however Maths and English classes will run as normal"
+          }
+        ]
+      },
+      {                
+        "month" : "October 2018",
+        "events" : [
+          {
+            "date" : "25<sup>th</sup> October",
+            "event" : "Half Term Break"
+          },
+          {
+            "date" : "27<sup>th</sup> October",
+            "event" : "Half Term Break / 40th Year Celebrations & Annual Prize giving function. Starting at 15:30 at SKSS Temple Woolwich, Rukmani Nivas Hall, St Margarets Grove, London, SE18 7RL"
+          }
+        ]
+      },
+      {    
+        "month" : "November 2018",
+        "events" : [
+          {
+            "date" : "8<sup>th</sup> November",
+            "event" : "Diwali Holiday"
+          }
+        ]
+      },
+      {    
+        "month" : "December 2018",
+        "events" : [
+          {
+            "date" : "1<sup>st</sup> December",
+            "event" : "HYA 40th Year Aarti Celebrations. Starting at 18:00 at SKSS Temple Woolwich, Main Sabha Hall, St Margarets Grove, London, SE18 7RL"
+          },
+          {
+            "date" : "22<sup>nd</sup> December",
+            "event" : "Christmas Break"
+          },
+          {
+            "date" : "27<sup>th</sup> December",
+            "event" : "Christmas Break"
+          },
+          {
+            "date" : "29<sup>th</sup> December",
+            "event" : "Christmas Break"
+          }
+        ]
+      },
+      {    
+        "month" : "January 2019",
+        "events" : [
+          {
+            "date" : "3<sup>rd</sup> January",
+            "event" : "Christmas Break"
+          },
+          {
+            "date" : "5<sup>th</sup> January",
+            "event" : "Christmas Break"
+          },
+          {
+            "date" : "10<sup>th</sup> January",
+            "event" : "Hinduism Classes Resume"
+          },
+          {
+            "date" : "12<sup>th</sup> January",
+            "event" : "English, Maths and Gujarati Classes Resume"
+          },
+          {
+            "date" : "17<sup>th</sup> January",
+            "event" : "Mock Exam Hinduism Paper 1"
+          },
+          {
+            "date" : "19<sup>th</sup> January",
+            "event" : "Mock Exam English Paper 1 & Gujarati Paper 1"
+          },
+          {
+            "date" : "24<sup>th</sup> January",
+            "event" : "Mock Exam Hinduism Paper 2"
+          },
+          {
+            "date" : "26<sup>th</sup> January",
+            "event" : "Mock Exam Maths Paper 1 and Purna Vidya"
+          }
+        ]
+      },
+      {    
+        "month" : "February 2019",
+        "events" : [
+          {
+            "date" : "2<sup>nd</sup> February",
+            "event" : "Mock Exam English Paper 2 & Gujarati Paper 2"
+          },
+          {
+            "date" : "3<sup>rd</sup> February",
+            "event" : "Maths Paper 2 and Praarthanaa"
+          }
+          ,
+          {
+            "date" : "21<sup>st</sup> February",
+            "event" : "Half Term Break"
+          }
+          ,
+          {
+            "date" : "23<sup>rd</sup> February",
+            "event" : "Half Term Break"
+          }
+        ]
+      },
+      {    
+        "month" : "April 2019",
+        "events" : [
+          {
+            "date" : "6<sup>th</sup> April",
+            "event" : "Parents Afternoon (No Maths or English classes, however Gujarati classes will run as normal)"
+          },
+          {
+            "date" : "11<sup>th</sup> April",
+            "event" : "Easter Break"
+          },
+          {
+            "date" : "13<sup>th</sup> April",
+            "event" : "Easter Break"
+          },
+          {
+            "date" : "18<sup>th</sup> April",
+            "event" : "Easter Break"
+          },
+          {
+            "date" : "20<sup>th</sup> April",
+            "event" : "Easter Break"
+          },
+          {
+            "date" : "25<sup>th</sup> April",
+            "event" : "Hinduism Classes Resume"
+          },
+          {
+            "date" : "27<sup>th</sup> April",
+            "event" : "English, Maths and Gujarati Classes Resume"
+          }
+        ]
+      },
+      {    
+        "month" : "May 2019",
+        "events" : [
+          {
+            "date" : "30<sup>th</sup> May",
+            "event" : "Half Term Break"
+          }
+        ]
+      },
+      {    
+        "month" : "June 2019",
+        "events" : [
+          {
+            "date" : "1<sup>st</sup> June",
+            "event" : "Half Term Break"
+          },
+          {
+            "date" : "22<sup>nd</sup> June",
+            "event" : "Final Exam English Paper 1 & Gujarati Paper 1"
+          },
+          {
+            "date" : "27<sup>th</sup> June",
+            "event" : "Final Exam Hinduism Paper 1"
+          },
+          {
+            "date" : "29<sup>th</sup> July",
+            "event" : "Final Exam Maths Paper 1 and Purna Vidhya"
+          }
+        ]
+      },
+      {    
+        "month" : "July 2019",
+        "events" : [
+          {
+            "date" : "4<sup>th</sup> July",
+            "event" : "Final Exam Hinduism Paper 2"
+          },
+          {
+            "date" : "6<sup>th</sup> July",
+            "event" : "Final Exam English Paper 2 & Gujarati Paper 2"
+          },
+          {
+            "date" : "13<sup>th</sup> July",
+            "event" : "Final Exam Maths Paper 2 and Praarthanaa / Registrations for <span class='important'>CURRENT</span> students ONLY (Classes will run as normal on this day)"
+          },
+          {
+            "date" : "18<sup>th</sup> July",
+            "event" : "Last Hinduism Class"
+          },
+          {
+            "date" : "20<sup>th</sup> July",
+            "event" : "Last Day of School / Registrations for <span class='important'>NEW</span> students ONLY"
+          }
+        ]
+      }
+    ]
   }  
 }

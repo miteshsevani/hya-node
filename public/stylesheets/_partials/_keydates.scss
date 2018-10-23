@@ -1,0 +1,45 @@
+.keydates {    
+  .events {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: $margin-default 0;
+    border-bottom: 1px solid $color-border-secondary;
+    padding-bottom: $margin-default;    
+    &:last-child {
+      border: 0;
+    }
+    .date {
+      width: 100%;
+      padding-left: $margin-default;
+      border-left: 2px solid $color-border-secondary;
+      display: inline-table;
+      font-weight: normal;      
+    }
+    .event {
+      width: 100%;
+    }
+    .important {
+      color: red;
+      font-style: italic;
+    }
+  }  
+}
+
+@include breakpoint(tablet) {
+  .keydates {
+    .wrapper {
+      margin: $margin-xl 0 0 0;
+    }
+    .events {
+      flex-direction: row;      
+      .date {
+        width: 25%;
+        border-width: 4px;
+      }
+      .event {
+        width: 75%;
+      }
+    }
+  }
+}

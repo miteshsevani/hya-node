@@ -124,6 +124,7 @@
 @include breakpoint(desktop) {
   .home {
     .banner {
+      height: 350px;
       background-position-y: -82px;
     }
     .classes {

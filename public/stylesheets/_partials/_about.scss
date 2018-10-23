@@ -28,21 +28,15 @@
     padding-bottom: $margin-lg;
   }
   #committee,
-  #volunteers {
-    .wrapper {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      .member {
-        width: calc(50% - #{$margin-default*2});
-        margin: $margin-md 0;
-        .name {
-          font-weight: normal;
-        }
-        &:last-child {
-          margin-bottom: 0;
-        }
+  #volunteers {  
+    .member {
+      width: calc(50% - #{$margin-default*2});
+      margin: $margin-md 0;
+      .name {
+        font-weight: normal;
+      }
+      &:last-child {
+        margin-bottom: 0;
       }
     }
   }

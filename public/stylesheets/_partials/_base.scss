@@ -40,7 +40,6 @@ p {
 }
 
 .title {
-  margin-top: $margin-lg;
   color: $color-secondary;  
 }
 
@@ -55,6 +54,12 @@ img {
   }
 }
 
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
 
 @include breakpoint(tablet) {
   .content {
@@ -66,6 +71,6 @@ img {
   .content {
     max-width: $width-desktop;
     margin: 0 auto;
-    padding: $margin-lg 0;
+    padding: $margin-xl 0;
   }
 }
