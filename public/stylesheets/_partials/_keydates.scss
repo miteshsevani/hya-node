@@ -10,10 +10,7 @@
       border: 0;
     }
     .date {
-      width: 100%;
-      padding-left: $margin-default;
-      border-left: 2px solid $color-border-secondary;
-      display: inline-table;
+      width: 100%;      
       font-weight: normal;      
     }
     .event {
@@ -34,8 +31,10 @@
     .events {
       flex-direction: row;      
       .date {
-        width: 25%;
-        border-width: 4px;
+        width: 25%;        
+        padding-left: $margin-default;
+        border-left: 4px solid $color-border-secondary;
+        display: inline-table;
       }
       .event {
         width: 75%;

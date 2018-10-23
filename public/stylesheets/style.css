@@ -685,9 +685,6 @@ header {
     border: 0; }
   .keydates .events .date {
     width: 100%;
-    padding-left: 8px;
-    border-left: 2px solid #D6D6D6;
-    display: inline-table;
     font-weight: normal; }
   .keydates .events .event {
     width: 100%; }
@@ -702,7 +699,9 @@ header {
     flex-direction: row; }
     .keydates .events .date {
       width: 25%;
-      border-width: 4px; }
+      padding-left: 8px;
+      border-left: 4px solid #D6D6D6;
+      display: inline-table; }
     .keydates .events .event {
       width: 75%; } }
 
