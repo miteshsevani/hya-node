@@ -469,6 +469,8 @@ header {
         font-weight: normal; }
         .main-nav ul li a:hover {
           color: #EF6C00; }
+        .main-nav ul li a.active {
+          color: #EF6C00; }
 
 @media all and (min-width: 768px) {
   .main-nav {
@@ -523,11 +525,11 @@ header {
   position: relative;
   display: flex;
   justify-content: center;
-  align-items: center;
   background: url("../images/reading.jpg") top/cover no-repeat;
   background-position-y: -32px;
-  height: 230px;
-  margin-bottom: 8px; }
+  height: 200px;
+  margin-bottom: 8px;
+  z-index: -1; }
   .home .banner:after {
     content: "";
     background-color: rgba(0, 0, 0, 0.4);
@@ -538,13 +540,15 @@ header {
     position: absolute;
     padding: 16px;
     color: #ffffff;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    text-align: right; }
     .home .banner .banner-heading h4 {
       font-size: 14px;
       background: #000;
       display: inline;
       padding: 2px 0;
-      box-shadow: 8px 0 0 #000, 8px 0 0 #000; }
+      box-shadow: 8px 0 0 #000, 8px 0 0 #000;
+      line-height: 24px; }
 
 .home .title {
   text-align: center;
@@ -588,12 +592,12 @@ header {
 
 @media all and (min-width: 768px) {
   .home .banner {
-    height: 300px;
+    height: 280px;
     margin-bottom: 16px; }
     .home .banner .banner-heading {
       max-width: 768px;
-      padding: 64px;
-      text-align: right; }
+      padding: 48px;
+      text-align: center; }
       .home .banner .banner-heading h4 {
         font-size: initial;
         padding: 12px 0;
@@ -615,8 +619,11 @@ header {
 
 @media all and (min-width: 992px) {
   .home .banner {
-    height: 350px;
+    height: 400px;
     background-position-y: -82px; }
+  .home .content {
+    background: #ffffff;
+    margin-top: -130px; }
   .home .classes {
     justify-content: space-between; }
     .home .classes .class {

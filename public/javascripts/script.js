@@ -1,6 +1,15 @@
 
+
+
+const currentPage = window.location.pathname;
+const activePage = setActiveCurrentPage(currentPage);
+
+function setActiveCurrentPage(currentPage) {  
+  document.querySelector(`.main-nav a[href='${currentPage}']`).classList.add('active');
+}
+
 /* ###### Main menu mobile toggle nav ###### */
-var navDropdown = document.querySelector(".nav-dropdown");
+const navDropdown = document.querySelector(".nav-dropdown");
 
 navDropdown.addEventListener('click', () => {
   var menu = document.querySelector('.main-nav');
@@ -8,34 +17,28 @@ navDropdown.addEventListener('click', () => {
   navDropdown.classList.toggle('close');
 })
 
+/* ###### Nav active state ###### */
+// About HYA - Create array from subnav links list
+const subNavList = document.querySelectorAll('.subnav a');;
+const subNavListArray = []; 
 
-
-
-
-/* ###### About page subnav active state ###### */
-var subnavList = document.querySelectorAll('.subnav a');;
-var subnavListArray = []; 
-
-// Create array from subnav links list
-for (var i = 0; i < subnavList.length; i++) {
-  subnavListArray.push(subnavList[i]);    
+for (var i = 0; i < subNavList.length; i++) {
+  subNavListArray.push(subNavList[i]);    
 }
 
-for (var i = 0; i < subnavListArray.length; i++) {  
-  subnavListArray[i].addEventListener('click', (e) => {    
-    removeActive(subnavListArray);
-    e.target.classList = 'active';    
+
+for (var i = 0; i < subNavListArray.length; i++) {  
+  subNavListArray[i].addEventListener('click', (e) => {    
+    console.log('clicked');
+    removeActive(subNavListArray);
+    e.target.classList = 'active';
   })
 }
 
+
 // remove existing active state
-function removeActive(subnavListArray) {
-  for (var i = 0; i < subnavListArray.length; i++) {
-    subnavListArray[i].classList.remove('active');
+function removeActive(navListArray) {
+  for (var i = 0; i < navListArray.length; i++) {
+    navListArray[i].classList.remove('active');
   }
 }
-
-
-
-
-

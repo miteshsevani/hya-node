@@ -2,12 +2,12 @@
   .banner {
     position: relative;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: center;    
     background: url('../images/reading.jpg') top/cover no-repeat;
     background-position-y: -32px;    
-    height: 230px;
+    height: 200px;
     margin-bottom: $margin-default;
+    z-index: -1;
     &:after {
       content: "";
       background-color: rgba(0,0,0,0.4);
@@ -19,16 +19,18 @@
       position: absolute;      
       padding: $margin-lg;
       color: #ffffff;
-      text-transform: uppercase;
+      text-transform: uppercase;      
+      text-align: right;
       h4 {        
         font-size: 14px;
         background: #000;
         display: inline;
         padding: $margin-sm/2 0;
         box-shadow: 8px 0 0 #000, 8px 0 0 #000;
+        line-height: 24px;
       }      
     }
-  }
+  }  
   .title {
     text-align: center;
     font-size: 28px;
@@ -83,12 +85,12 @@
 @include breakpoint(tablet) {
   .home {
     .banner {      
-      height: 300px;
+      height: 280px;
       margin-bottom: $margin-lg;
       .banner-heading {        
         max-width: $width-tablet;
-        padding: $margin-xl*2;
-        text-align: right;
+        padding: $margin-xl*1.5;
+        text-align: center;   
         h4 {        
           font-size: initial;
           padding: $margin-md 0;
@@ -96,7 +98,7 @@
           box-shadow: 18px 0 0 #000, -18px 0 0 #000;
         }      
       }
-    }
+    }    
     .title {
       font-size: 34px;
     }
@@ -124,8 +126,12 @@
 @include breakpoint(desktop) {
   .home {
     .banner {
-      height: 350px;
+      height: 400px;
       background-position-y: -82px;
+    }
+    .content {
+      background: #ffffff;
+      margin-top: -130px;
     }
     .classes {
       justify-content: space-between;

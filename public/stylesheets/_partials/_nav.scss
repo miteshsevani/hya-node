@@ -19,6 +19,9 @@
         &:hover {
           color: $color-brand;
         }
+        &.active {
+          color: $color-brand;
+        }
       }
     }
   }    
