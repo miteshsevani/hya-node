@@ -417,13 +417,14 @@ header {
   header .brand {
     display: flex;
     align-items: center; }
-    header .brand .wrapper {
+    header .brand .brand-wrapper {
+      display: flex;
       flex-direction: column; }
-      header .brand .wrapper .brand-title {
+      header .brand .brand-wrapper .brand-title {
         font: 500 15px "Montserrat", Helvetica, Arial, sans-serif;
         text-transform: uppercase;
         color: rgba(255, 255, 255, 0.9); }
-      header .brand .wrapper .tagline {
+      header .brand .brand-wrapper .tagline {
         color: rgba(255, 255, 255, 0.8); }
 
 @media all and (min-width: 768px) {

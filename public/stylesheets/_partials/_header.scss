@@ -17,7 +17,8 @@ header {
   .brand {
     display: flex;
     align-items: center;
-    .wrapper {
+    .brand-wrapper {
+      display: flex;
       flex-direction: column;
       .brand-title {
         font: 500 15px $font-family-header;
