@@ -544,7 +544,7 @@ header {
   .home .banner .banner-heading {
     position: absolute;
     padding: 16px;
-    color: rgba(255, 255, 255, 0.8);
+    color: white;
     text-transform: uppercase;
     text-align: right; }
     .home .banner .banner-heading h4 {
