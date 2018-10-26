@@ -5,27 +5,34 @@
     justify-content: center;
     align-items: center;
     background: url('../images/reading.jpg') top/cover no-repeat;
+    background: url('../images/background.jpg') top/cover no-repeat;    
     background-position-y: -32px;    
+    background-position-y: bottom;
     height: 230px;
     margin-bottom: $margin-default;
     &:after {
       content: "";
-      background-color: rgba(0,0,0,0.4);
+      
       width: 100%;
       height: 100%;
       display: block;            
     }
     .banner-heading {
+      display: flex;
+      justify-content: space-between;
       position: absolute;      
       padding: $margin-lg;
-      color: #ffffff;
+      
       text-transform: uppercase;
       h4 {        
-        font-size: 14px;
-        background: #000;
-        display: inline;
-        padding: $margin-sm/2 0;
-        box-shadow: 8px 0 0 #000, 8px 0 0 #000;
+        font-size: 18px;
+        
+        width: 80%;
+        
+        
+      }
+      img {
+        object-fit: contain;
       }      
     }
   }
@@ -92,8 +99,7 @@
         h4 {        
           font-size: initial;
           padding: $margin-md 0;
-          line-height: 50px;
-          box-shadow: 18px 0 0 #000, -18px 0 0 #000;
+          line-height: 50px;          
         }      
       }
     }
@@ -125,7 +131,7 @@
   .home {
     .banner {
       height: 350px;
-      background-position-y: -82px;
+      
     }
     .classes {
       justify-content: space-between;

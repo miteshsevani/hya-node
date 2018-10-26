@@ -12,6 +12,8 @@ var indexRouter = require('./routes/index');
 var aboutRouter = require('./routes/about');
 var keydatesRouter = require('./routes/keydates');
 var contactRouter = require('./routes/contact');
+var galleryRouter = require('./routes/gallery');
+var downloadsRouter = require('./routes/downloads');
 
 var app = express();
 
@@ -41,6 +43,8 @@ app.use('/', indexRouter);
 app.use('/about', aboutRouter);
 app.use('/keydates', keydatesRouter);
 app.use('/contact', contactRouter);
+app.use('/gallery', galleryRouter);
+app.use('/downloads', downloadsRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

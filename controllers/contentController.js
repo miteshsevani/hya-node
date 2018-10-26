@@ -11,3 +11,11 @@ exports.about = function(req, res) {
 exports.keydates = function(req, res) {
   res.render('keydates',{data:data.content.keydates});
 };
+
+exports.gallery = function(req, res) {
+  res.render('gallery',{data:data.content.gallery});
+};
+
+exports.downloads = function(req, res) {
+  res.render('downloads',{data:data.content.downloads});
+};

@@ -525,26 +525,27 @@ header {
   justify-content: center;
   align-items: center;
   background: url("../images/reading.jpg") top/cover no-repeat;
+  background: url("../images/background.jpg") top/cover no-repeat;
   background-position-y: -32px;
+  background-position-y: bottom;
   height: 230px;
   margin-bottom: 8px; }
   .home .banner:after {
     content: "";
-    background-color: rgba(0, 0, 0, 0.4);
     width: 100%;
     height: 100%;
     display: block; }
   .home .banner .banner-heading {
+    display: flex;
+    justify-content: space-between;
     position: absolute;
     padding: 16px;
-    color: #ffffff;
     text-transform: uppercase; }
     .home .banner .banner-heading h4 {
-      font-size: 14px;
-      background: #000;
-      display: inline;
-      padding: 2px 0;
-      box-shadow: 8px 0 0 #000, 8px 0 0 #000; }
+      font-size: 18px;
+      width: 80%; }
+    .home .banner .banner-heading img {
+      object-fit: contain; }
 
 .home .title {
   text-align: center;
@@ -597,8 +598,7 @@ header {
       .home .banner .banner-heading h4 {
         font-size: initial;
         padding: 12px 0;
-        line-height: 50px;
-        box-shadow: 18px 0 0 #000, -18px 0 0 #000; }
+        line-height: 50px; }
   .home .title {
     font-size: 34px; }
   .home .classes {
@@ -615,8 +615,7 @@ header {
 
 @media all and (min-width: 992px) {
   .home .banner {
-    height: 350px;
-    background-position-y: -82px; }
+    height: 350px; }
   .home .classes {
     justify-content: space-between; }
     .home .classes .class {
