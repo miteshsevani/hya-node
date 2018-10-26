@@ -26,6 +26,12 @@
   }
   section {
     padding-bottom: $margin-lg;
+    &:before {
+      content: "";        
+      display: block;
+      height: 150px;
+      margin: -150px 0 0;
+    }
   }
   #committee,
   #volunteers {  
@@ -39,6 +45,9 @@
         margin-bottom: 0;
       }
     }
+  }
+  #committee {
+    margin-top: $margin-lg;
   }
 }
 
