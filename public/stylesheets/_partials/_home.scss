@@ -29,15 +29,16 @@
         box-shadow: 8px 0 0 #000, 8px 0 0 #000;
         line-height: 24px;        
       }
-      .quote {
-        display: none;
+      .credit {        
+        font-family: 'Caveat', cursive;
+        text-align: right;
+        font-weight: bold;
+        margin-top: $margin-default;
       }
     }
   }
   .logo-40 {
-    width: 90px;
-    align-self: center;    
-    padding-bottom: $margin-md; 
+    display: none;
   }
   .title {
     text-align: center;
@@ -95,32 +96,31 @@
     .banner {      
       height: 320px;
       margin-bottom: $margin-lg;
-      .banner-heading {        
-        max-width: $width-tablet;
-        padding: $margin-xl*1.5;
-        text-align: center;
-        .quote {
+      .banner-heading {
+        display: flex;
+        justify-content: space-between;
+        max-width: 700px;
+        padding: 25px 0;
+        .logo-40 {
           display: block;
-          font-family: 'Caveat', cursive;
-          text-align: right;
-          font-weight: bold;
-          margin-bottom: $margin-default;
+          width: 20%;          
+          background: white;
+          align-self: center;
+          border-radius: 50%;
+          object-fit: none;
         }
-        h4 {        
-          font-size: initial;
-          padding: $margin-md 0;
-          line-height: 50px;
-          box-shadow: 18px 0 0 #000, -18px 0 0 #000;
-        }      
+        .quote {
+          width: 73%;
+          padding-right: 16px;
+          h4 {          
+            font-size: initial;
+            padding: $margin-md 0;
+            line-height: 50px;
+            box-shadow: 18px 0 0 #000, -18px 0 0 #000;
+          }
+        }
       }
-    }
-    .logo-40 {
-      width: auto;      
-      margin-top: -90px;
-      padding: $margin-lg;
-      background: white;
-      margin-bottom: $margin-default;
-    }
+    }    
     .title {
       font-size: 34px;
     }
@@ -150,6 +150,10 @@
     .banner {
       height: 450px;
       background-position-y: -82px;
+      .banner-heading {
+        max-width: 950px;
+        padding: 70px 0;
+      }
     }
     .content {
       background: #ffffff;

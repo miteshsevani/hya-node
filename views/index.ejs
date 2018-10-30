@@ -1,13 +1,15 @@
 <%- include('includes/header.ejs'); %>
 
-<section class="banner">
-  <div class="banner-heading">
-    <div class="quote">Swami Vivekanand</div>
-    <h4><%= data.intro %></h4>    
+<section class="banner">  
+  <div class="banner-heading">    
+    <img class="logo-40" src="./images/logo-40.png" />
+    <div class="quote">
+      <h4><%= data.intro %></h4>
+      <div class="credit">Swami Vivekanand</div>
+    </div>
   </div>
 </section>  
-<section class="content">    
-    <img class="logo-40" src="./images/logo-40.png" />
+<section class="content">        
   <h1 class="title">Our Classes</h1>
   <section class="classes">       
     <% data.classes.forEach(function(item) { %>
