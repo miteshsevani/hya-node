@@ -37,13 +37,12 @@
       }
     }
   }
-  .logo-40 {
-    display: none;
-  }
+  
   .title {
     text-align: center;
     font-size: 28px;
   }
+
   .classes {
     width: 100%;
     display: flex;
@@ -98,16 +97,9 @@
         justify-content: space-between;
         max-width: 700px;
         padding: 25px 0;
-        .logo-40 {
-          display: block;
-          width: 20%;          
-          background: white;
-          align-self: center;
-          border-radius: 50%;
-          object-fit: none;
-        }
+        
         .quote {
-          width: 73%;
+          width: 90%;
           padding-right: 16px;
           h4 {          
             font-size: initial;
@@ -145,7 +137,7 @@
 @include breakpoint(desktop) {
   .home {
     .banner {
-      height: 450px;
+      height: 400px;
       background-position-y: -82px;
       .banner-heading {
         max-width: 950px;
@@ -154,7 +146,7 @@
     }
     .content {
       background: #ffffff;
-      margin-top: -140px;
+      margin-top: -90px;
     }
     .classes {
       justify-content: space-between;

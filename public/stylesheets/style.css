@@ -424,8 +424,9 @@ header {
         font: 500 15px "Montserrat", Helvetica, Arial, sans-serif;
         text-transform: uppercase;
         color: rgba(255, 255, 255, 0.9); }
-      header .brand .brand-wrapper .tagline {
-        color: rgba(255, 255, 255, 0.8); }
+  header .tagline {
+    margin-top: 4px;
+    color: rgba(255, 255, 255, 0.8); }
 
 @media all and (min-width: 768px) {
   header .nav-dropdown {
@@ -440,7 +441,7 @@ header {
 
 @media all and (min-width: 992px) {
   header .header-wrapper .brand .brand-title {
-    font-size: 24px; } }
+    font-size: 20px; } }
 
 @media all and (max-width: 767px) {
   .nav-dropdown {
@@ -561,9 +562,6 @@ header {
       font-weight: bold;
       margin-top: 8px; }
 
-.home .logo-40 {
-  display: none; }
-
 .home .title {
   text-align: center;
   font-size: 28px; }
@@ -611,15 +609,8 @@ header {
       justify-content: space-between;
       max-width: 700px;
       padding: 25px 0; }
-      .home .banner .banner-heading .logo-40 {
-        display: block;
-        width: 20%;
-        background: white;
-        align-self: center;
-        border-radius: 50%;
-        object-fit: none; }
       .home .banner .banner-heading .quote {
-        width: 73%;
+        width: 90%;
         padding-right: 16px; }
         .home .banner .banner-heading .quote h4 {
           font-size: initial;
@@ -642,14 +633,14 @@ header {
 
 @media all and (min-width: 992px) {
   .home .banner {
-    height: 450px;
+    height: 400px;
     background-position-y: -82px; }
     .home .banner .banner-heading {
       max-width: 950px;
       padding: 70px 0; }
   .home .content {
     background: #ffffff;
-    margin-top: -140px; }
+    margin-top: -90px; }
   .home .classes {
     justify-content: space-between; }
     .home .classes .class {
@@ -774,8 +765,12 @@ footer {
   padding: 32px;
   box-shadow: 0 -2px 3px -3px black; }
   footer .logo {
-    width: 60px;
     margin-bottom: 8px; }
+    footer .logo img {
+      width: 60px;
+      padding: 8px; }
+      footer .logo img.logo-40 {
+        width: 70px; }
   footer .copyright {
     margin-top: 8px;
     font-size: 12px; }

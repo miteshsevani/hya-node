@@ -25,8 +25,7 @@ for (var i = 0; i < subNavList.length; i++) {
 
 
 for (var i = 0; i < subNavListArray.length; i++) {  
-  subNavListArray[i].addEventListener('click', (e) => {    
-    console.log('clicked');
+  subNavListArray[i].addEventListener('click', (e) => {
     removeActive(subNavListArray);
     e.target.classList = 'active';
   })

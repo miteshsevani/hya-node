@@ -24,11 +24,12 @@ header {
         font: 500 15px $font-family-header;
         text-transform: uppercase;
         color: rgba(255,255,255,0.9);
-      }
-      .tagline {        
-        color: rgba(255,255,255,0.8);
-      }
+      }      
     }
+  }
+  .tagline {        
+    margin-top: 4px;
+    color: rgba(255,255,255,0.8);
   }
 }
 
@@ -57,7 +58,7 @@ header {
     .header-wrapper {
       .brand {      
         .brand-title {
-          font-size: 24px;
+          font-size: 20px;
         }        
       }  
     }
